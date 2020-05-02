@@ -19,8 +19,7 @@ architecture extensor of signExtend is
 begin
 
   D <= "11";
-  CB <= "10";
-  B <= '0';
+  B <= '1';
 
 
  o <= (63 downto 9 => i(20)) & i(20 downto 12) when i(31 downto 30) = D else
