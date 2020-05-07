@@ -1,0 +1,17 @@
+Quartus Prime Archive log --	D:/Labdig/Exp51/Exp5.qarlog
+
+Archive:	D:/Labdig/Exp51/Exp5.qar
+Date:		Sun Apr 12 19:34:54 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/Labdig/Exp51/Exp5.qpf
+D:/Labdig/Exp51/Exp5.qsf
+D:/Labdig/Exp51/Exp5.vhd
+D:/Labdig/Exp51/comparador.vhd
+D:/Labdig/Exp51/contador.vhd
+d:/épqé/quartus/quartus/bin64/assignment_defaults.qdf
+	======= Total: 6 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

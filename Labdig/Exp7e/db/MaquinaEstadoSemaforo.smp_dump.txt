@@ -1,0 +1,10 @@
+
+State Machine - |MaquinaEstadoSemaforo|E_Atual
+Name E_Atual.Apagado E_Atual.Piscante E_Atual.eAmB E_Atual.eVdB E_Atual.eAmA E_Atual.eVdA E_Atual.Bgn 
+E_Atual.Bgn 0 0 0 0 0 0 0 
+E_Atual.eVdA 0 0 0 0 0 1 1 
+E_Atual.eAmA 0 0 0 0 1 0 1 
+E_Atual.eVdB 0 0 0 1 0 0 1 
+E_Atual.eAmB 0 0 1 0 0 0 1 
+E_Atual.Piscante 0 1 0 0 0 0 1 
+E_Atual.Apagado 1 0 0 0 0 0 1 

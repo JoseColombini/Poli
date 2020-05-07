@@ -1,0 +1,84 @@
+|Exp5
+clock => contador:CONT1.clock
+clock => contador:CONT2.clock
+zera1 => contador:CONT1.zera
+conta1 => contador:CONT1.conta
+conta2 => contador:CONT2.conta
+carrega2 => contador:CONT2.carrega
+fim1 <= contador:CONT1.fim
+condicao1 <= comparador:COMP.igual
+saida[0] <= contador:CONT2.contagem[0]
+saida[1] <= contador:CONT2.contagem[1]
+saida[2] <= contador:CONT2.contagem[2]
+saida[3] <= contador:CONT2.contagem[3]
+db_fim2 <= contador:CONT2.fim
+db_contagem1[0] <= contador:CONT1.contagem[0]
+db_contagem1[1] <= contador:CONT1.contagem[1]
+db_contagem1[2] <= contador:CONT1.contagem[2]
+db_contagem1[3] <= contador:CONT1.contagem[3]
+
+
+|Exp5|contador:CONT1
+clock => IQ[0].CLK
+clock => IQ[1].CLK
+clock => IQ[2].CLK
+clock => IQ[3].CLK
+zera => IQ[0].ACLR
+zera => IQ[1].ACLR
+zera => IQ[2].ACLR
+zera => IQ[3].ACLR
+conta => IQ.OUTPUTSELECT
+conta => IQ.OUTPUTSELECT
+conta => IQ.OUTPUTSELECT
+conta => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+entrada[0] => IQ.DATAB
+entrada[1] => IQ.DATAB
+entrada[2] => IQ.DATAB
+entrada[3] => IQ.DATAB
+contagem[0] <= IQ[0].DB_MAX_OUTPUT_PORT_TYPE
+contagem[1] <= IQ[1].DB_MAX_OUTPUT_PORT_TYPE
+contagem[2] <= IQ[2].DB_MAX_OUTPUT_PORT_TYPE
+contagem[3] <= IQ[3].DB_MAX_OUTPUT_PORT_TYPE
+fim <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Exp5|comparador:COMP
+A[0] => Equal0.IN1
+A[1] => Equal0.IN0
+B[0] => Equal0.IN3
+B[1] => Equal0.IN2
+igual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Exp5|contador:CONT2
+clock => IQ[0].CLK
+clock => IQ[1].CLK
+clock => IQ[2].CLK
+clock => IQ[3].CLK
+zera => IQ[0].ACLR
+zera => IQ[1].ACLR
+zera => IQ[2].ACLR
+zera => IQ[3].ACLR
+conta => IQ.OUTPUTSELECT
+conta => IQ.OUTPUTSELECT
+conta => IQ.OUTPUTSELECT
+conta => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+entrada[0] => IQ.DATAB
+entrada[1] => IQ.DATAB
+entrada[2] => IQ.DATAB
+entrada[3] => IQ.DATAB
+contagem[0] <= IQ[0].DB_MAX_OUTPUT_PORT_TYPE
+contagem[1] <= IQ[1].DB_MAX_OUTPUT_PORT_TYPE
+contagem[2] <= IQ[2].DB_MAX_OUTPUT_PORT_TYPE
+contagem[3] <= IQ[3].DB_MAX_OUTPUT_PORT_TYPE
+fim <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

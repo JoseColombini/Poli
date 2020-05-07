@@ -1,0 +1,26 @@
+|MaquinaEstadoSemaforo
+clock => E_Atual~1.DATAIN
+Noturno => E_Futuro.OUTPUTSELECT
+Noturno => E_Futuro.OUTPUTSELECT
+Noturno => E_Futuro.OUTPUTSELECT
+Noturno => Selector3.IN3
+Noturno => E_Futuro.Apagado.DATAB
+Noturno => transition.IN0
+Noturno => transition.IN0
+Noturno => Selector0.IN1
+PvA => transition.IN1
+PvA => Selector1.IN3
+PvA => transition.IN1
+PvA => Selector0.IN2
+PvB => transition.IN1
+PvB => Selector2.IN3
+PvB => Selector0.IN4
+reset => E_Atual~3.DATAIN
+c1s <= c1s.DB_MAX_OUTPUT_PORT_TYPE
+c5s <= c5s.DB_MAX_OUTPUT_PORT_TYPE
+c1m <= c1m.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= Q0.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= Q1.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= Q2.DB_MAX_OUTPUT_PORT_TYPE
+
+

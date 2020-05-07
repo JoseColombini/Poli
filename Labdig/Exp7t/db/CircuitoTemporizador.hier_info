@@ -1,0 +1,121 @@
+|CircuitoTemporizador
+c1s => cout.OUTPUTSELECT
+c5s => cout.OUTPUTSELECT
+c5s => fliflop:conter:0:INITC:Ci.reset
+c5s => fliflop:conter:1:CO1:Ci.reset
+c5s => fliflop:conter:2:CO2:Ci.reset
+c5s => fliflop:conter:3:CO3:Ci.reset
+c1m => cout.OUTPUTSELECT
+c1m => temp1m.ACLR
+c1m => cc60[0].PRESET
+c1m => cc60[1].ACLR
+c1m => cc60[2].ACLR
+c1m => cc60[3].ACLR
+c1m => cc60[4].ACLR
+c1m => cc60[5].ACLR
+c1m => cc60[6].ACLR
+c1m => cc60[7].ACLR
+c1m => cc60[8].ACLR
+c1m => cc60[9].ACLR
+c1m => cc60[10].ACLR
+c1m => cc60[11].ACLR
+c1m => cc60[12].ACLR
+c1m => cc60[13].ACLR
+c1m => cc60[14].ACLR
+c1m => cc60[15].ACLR
+c1m => cc60[16].ACLR
+c1m => cc60[17].ACLR
+c1m => cc60[18].ACLR
+c1m => cc60[19].ACLR
+c1m => cc60[20].ACLR
+c1m => cc60[21].ACLR
+c1m => cc60[22].ACLR
+c1m => cc60[23].ACLR
+c1m => cc60[24].ACLR
+c1m => cc60[25].ACLR
+c1m => cc60[26].ACLR
+c1m => cc60[27].ACLR
+c1m => cc60[28].ACLR
+c1m => cc60[29].ACLR
+c1m => cc60[30].ACLR
+c1m => cc60[31].ACLR
+clock => temp1s.CLK
+clock => cc1[0].CLK
+clock => cc1[1].CLK
+clock => cc1[2].CLK
+clock => cc1[3].CLK
+clock => cc1[4].CLK
+clock => cc1[5].CLK
+clock => cc1[6].CLK
+clock => cc1[7].CLK
+clock => cc1[8].CLK
+clock => cc1[9].CLK
+clock => cc1[10].CLK
+clock => cc1[11].CLK
+clock => cc1[12].CLK
+clock => cc1[13].CLK
+clock => cc1[14].CLK
+clock => cc1[15].CLK
+clock => cc1[16].CLK
+clock => cc1[17].CLK
+clock => cc1[18].CLK
+clock => cc1[19].CLK
+clock => cc1[20].CLK
+clock => cc1[21].CLK
+clock => cc1[22].CLK
+clock => cc1[23].CLK
+clock => cc1[24].CLK
+clock => cc1[25].CLK
+clock => cc1[26].CLK
+clock => cc1[27].CLK
+clock => cc1[28].CLK
+clock => cc1[29].CLK
+clock => cc1[30].CLK
+clock => cc1[31].CLK
+cout << cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CircuitoTemporizador|fliflop:\conter:0:INITC:Ci
+D => Q~reg0.DATAIN
+D => QI~reg0.DATAIN
+clock => QI~reg0.CLK
+clock => Q~reg0.CLK
+reset => Q~reg0.ACLR
+reset => QI~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QI <= QI~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CircuitoTemporizador|fliflop:\conter:1:CO1:Ci
+D => Q~reg0.DATAIN
+D => QI~reg0.DATAIN
+clock => QI~reg0.CLK
+clock => Q~reg0.CLK
+reset => Q~reg0.ACLR
+reset => QI~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QI <= QI~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CircuitoTemporizador|fliflop:\conter:2:CO2:Ci
+D => Q~reg0.DATAIN
+D => QI~reg0.DATAIN
+clock => QI~reg0.CLK
+clock => Q~reg0.CLK
+reset => Q~reg0.ACLR
+reset => QI~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QI <= QI~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CircuitoTemporizador|fliflop:\conter:3:CO3:Ci
+D => Q~reg0.DATAIN
+D => QI~reg0.DATAIN
+clock => QI~reg0.CLK
+clock => Q~reg0.CLK
+reset => Q~reg0.ACLR
+reset => QI~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QI <= QI~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

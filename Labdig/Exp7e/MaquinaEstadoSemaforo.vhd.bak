@@ -1,0 +1,11 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity MaquinaEstadoSemaforo is
+	port(
+		clock1s, clock5s, clock1m	:	in std_logic;
+		Noturno, PvA, PvB				:	in std_logic;
+		
+	);
+end entity;

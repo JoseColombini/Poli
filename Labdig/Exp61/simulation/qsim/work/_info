@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Labdig/Exp61/simulation/qsim
+Emaquinaes
+Z1 w1588007122
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 OGn598C_0mX<WSGfCb?AK2
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 CcdNAEi>PYH4@n><]NQ]V2
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 QZo1Vh6en2ZO3=hNmAfQ>0
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 :S1C`o89Vbe5bV6`:6CaB3
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
+R0
+Z11 8MaquinaES.vho
+Z12 FMaquinaES.vho
+l0
+L38
+VDOXQRVd70DQn?8;YQ:Nbb0
+!s100 Nc8:SkN?^z[d?NaY_1=iU3
+Z13 OV;C;10.5b;63
+32
+Z14 !s110 1588007123
+!i10b 1
+Z15 !s108 1588007123.000000
+Z16 !s90 -work|work|MaquinaES.vho|
+Z17 !s107 MaquinaES.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 9 maquinaes 0 22 DOXQRVd70DQn?8;YQ:Nbb0
+l116
+L54
+VQoFnb2VL0cRV1dS7_e7;U0
+!s100 Fa8R^f1i^fZVGaAdCGhK73
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Emaquinaes_vhd_vec_tst
+Z20 w1588007120
+R8
+R9
+R0
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
+l0
+L31
+VVM<k[:gHBFCB]>afhP4_M3
+!s100 zfdjG4m9HgJ^Wd;fOQjB60
+R13
+32
+R14
+!i10b 1
+R15
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+!i113 1
+R18
+R19
+Amaquinaes_arch
+R8
+R9
+Z25 DEx4 work 21 maquinaes_vhd_vec_tst 0 22 VM<k[:gHBFCB]>afhP4_M3
+l62
+L33
+V>MLIKUk0;KgJlAjB9]<Y71
+!s100 CgmSBnnF>7:k3A>BDUC@?3
+R13
+32
+R14
+!i10b 1
+R15
+R23
+R24
+!i113 1
+R18
+R19

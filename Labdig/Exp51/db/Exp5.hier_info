@@ -1,0 +1,49 @@
+|Exp5
+clock => contador:CONT.clock
+clear => contador:CONT.zera
+enable => contador:CONT.conta
+load => contador:CONT.carrega
+data[0] => contador:CONT.entrada[0]
+data[1] => contador:CONT.entrada[1]
+data[2] => contador:CONT.entrada[2]
+data[3] => contador:CONT.entrada[3]
+rco << contador:CONT.fim
+equal << comparador:COMP.igual
+
+
+|Exp5|contador:CONT
+clock => IQ[0].CLK
+clock => IQ[1].CLK
+clock => IQ[2].CLK
+clock => IQ[3].CLK
+zera => IQ[0].ACLR
+zera => IQ[1].ACLR
+zera => IQ[2].ACLR
+zera => IQ[3].ACLR
+conta => IQ.OUTPUTSELECT
+conta => IQ.OUTPUTSELECT
+conta => IQ.OUTPUTSELECT
+conta => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+entrada[0] => IQ.DATAB
+entrada[1] => IQ.DATAB
+entrada[2] => IQ.DATAB
+entrada[3] => IQ.DATAB
+contagem[0] <= IQ[0].DB_MAX_OUTPUT_PORT_TYPE
+contagem[1] <= IQ[1].DB_MAX_OUTPUT_PORT_TYPE
+contagem[2] <= IQ[2].DB_MAX_OUTPUT_PORT_TYPE
+contagem[3] <= IQ[3].DB_MAX_OUTPUT_PORT_TYPE
+fim <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Exp5|comparador:COMP
+A[0] => Equal0.IN1
+A[1] => Equal0.IN0
+B[0] => Equal0.IN3
+B[1] => Equal0.IN2
+igual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

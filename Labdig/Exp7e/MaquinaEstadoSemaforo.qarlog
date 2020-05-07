@@ -1,0 +1,16 @@
+Quartus Prime Archive log --	D:/Labdig/Exp7e/MaquinaEstadoSemaforo.qarlog
+
+Archive:	D:/Labdig/Exp7e/MaquinaEstadoSemaforo.qar
+Date:		Mon May 04 09:36:40 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/Labdig/Exp7e/MaquinaEstadoSemaforo.qpf
+D:/Labdig/Exp7e/MaquinaEstadoSemaforo.qsf
+D:/Labdig/Exp7e/MaquinaEstadoSemaforo.vhd
+D:/Labdig/Exp7e/Waveform.vwf
+d:/epqe/quartus/quartus/bin64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

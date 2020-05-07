@@ -1,0 +1,20 @@
+library ieee;
+use std_logic_1164.all;
+
+entity CircuitoTemporizador is
+  port(
+    clock1s, clock5s, clock1m : in std_logic;
+    clock : in std_logic;
+
+    cout  : out std_logic
+  );
+end entity;
+
+
+architecture CircuitoTemporizador of CircuitoTemporizador is
+
+  signal temp1, temp2, temp3  : std_logic;
+
+begin
+
+end architecture;
