@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "c1s",
+					"strict" : false
+				},
+				{
+					"name" : "c5s",
+					"strict" : false
+				},
+				{
+					"name" : "c1m",
+					"strict" : false
+				},
+				{
+					"name" : "Q0",
+					"strict" : false
+				},
+				{
+					"name" : "Q1",
+					"strict" : false
+				},
+				{
+					"name" : "Q2",
+					"strict" : false
+				},
+				{
+					"name" : "Noturno",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "PvB",
+					"strict" : false
+				},
+				{
+					"name" : "Pd",
+					"strict" : false
+				},
+				{
+					"name" : "PvA",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
