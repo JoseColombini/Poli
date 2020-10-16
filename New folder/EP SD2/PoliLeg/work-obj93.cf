@@ -1,0 +1,24 @@
+v 4
+file . "PoliLegsc.vhd" "67896757b8a23851b4961d3ce11df67ee56f07bf" "20191201182528.678":
+  entity reg at 4( 205) + 0 on 43;
+  architecture r of reg at 22( 532) + 0 on 44;
+  entity regfile at 41( 993) + 0 on 45;
+  architecture regbanch of regfile at 64( 1545) + 0 on 46;
+  entity signextend at 112( 2975) + 0 on 47;
+  architecture extensor of signextend at 122( 3202) + 0 on 48;
+  entity fulladder at 144( 3849) + 0 on 49;
+  architecture fulladder of fulladder at 155( 3996) + 0 on 50;
+  entity alu1bit at 170( 4395) + 0 on 51;
+  architecture alu1bit of alu1bit at 182( 4631) + 0 on 52;
+  entity orgasm at 219( 5612) + 0 on 53;
+  architecture orgasm of orgasm at 229( 5757) + 0 on 54;
+  entity alu at 237( 6054) + 0 on 55;
+  architecture alu of alu at 255( 6470) + 0 on 56;
+  entity alucontrol at 329( 8753) + 0 on 57;
+  architecture alucontrol of alucontrol at 340( 8976) + 0 on 58;
+  entity datapath at 362( 9605) + 0 on 59;
+  architecture herewego of datapath at 391( 10470) + 0 on 60;
+  entity controlunit at 530( 14165) + 0 on 61;
+  architecture controlunit of controlunit at 550( 14636) + 0 on 62;
+  entity polilegsc at 624( 17561) + 0 on 63;
+  architecture polilegsc of polilegsc at 642( 18008) + 0 on 64;

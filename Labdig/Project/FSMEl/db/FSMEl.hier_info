@@ -1,0 +1,21 @@
+|FSMEl
+clock => Epast~1.DATAIN
+clock => Enow~1.DATAIN
+reset => Epast.Door.OUTPUTSELECT
+reset => Epast.Gd.OUTPUTSELECT
+reset => Epast.Gup.OUTPUTSELECT
+reset => Epast.Init.OUTPUTSELECT
+reset => Enow~3.DATAIN
+destiny[0] => Add0.IN6
+destiny[1] => Add0.IN5
+destiny[2] => Add0.IN4
+position[0] => Add0.IN3
+position[1] => Add0.IN2
+position[2] => Add0.IN1
+call => Efut.IN1
+call => Efut.IN1
+do <= do.DB_MAX_OUTPUT_PORT_TYPE
+upDown[0] <= upDown[0].DB_MAX_OUTPUT_PORT_TYPE
+upDown[1] <= upDown.DB_MAX_OUTPUT_PORT_TYPE
+
+

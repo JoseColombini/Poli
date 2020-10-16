@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "05/04/2020 02:19:06"
+-- DATE "06/23/2020 14:17:03"
 
 -- 
 -- Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -73,8 +73,8 @@ SIGNAL \clock~input_o\ : std_logic;
 SIGNAL \TEMP|Add0~81_sumout\ : std_logic;
 SIGNAL \TEMP|cc1[0]~0_combout\ : std_logic;
 SIGNAL \TEMP|Add0~82\ : std_logic;
-SIGNAL \TEMP|Add0~109_sumout\ : std_logic;
-SIGNAL \TEMP|Add0~110\ : std_logic;
+SIGNAL \TEMP|Add0~113_sumout\ : std_logic;
+SIGNAL \TEMP|Add0~114\ : std_logic;
 SIGNAL \TEMP|Add0~117_sumout\ : std_logic;
 SIGNAL \TEMP|Add0~118\ : std_logic;
 SIGNAL \TEMP|Add0~121_sumout\ : std_logic;
@@ -133,8 +133,8 @@ SIGNAL \TEMP|Add0~101_sumout\ : std_logic;
 SIGNAL \TEMP|Add0~102\ : std_logic;
 SIGNAL \TEMP|Add0~105_sumout\ : std_logic;
 SIGNAL \TEMP|Add0~106\ : std_logic;
-SIGNAL \TEMP|Add0~113_sumout\ : std_logic;
-SIGNAL \TEMP|Add0~114\ : std_logic;
+SIGNAL \TEMP|Add0~109_sumout\ : std_logic;
+SIGNAL \TEMP|Add0~110\ : std_logic;
 SIGNAL \TEMP|Add0~41_sumout\ : std_logic;
 SIGNAL \TEMP|Equal0~2_combout\ : std_logic;
 SIGNAL \TEMP|Equal0~3_combout\ : std_logic;
@@ -246,27 +246,19 @@ SIGNAL \FSMSEF|E_Futuro.Apagado~0_combout\ : std_logic;
 SIGNAL \FSMSEF|E_Atual.Apagado~q\ : std_logic;
 SIGNAL \FSMSEF|Selector3~0_combout\ : std_logic;
 SIGNAL \FSMSEF|E_Atual.Piscante~q\ : std_logic;
-SIGNAL \FSMSEF|c1s~combout\ : std_logic;
+SIGNAL \FSMSEF|Q2~combout\ : std_logic;
 SIGNAL \TEMP|cout~0_combout\ : std_logic;
 SIGNAL \FSMSEF|Selector0~0_combout\ : std_logic;
 SIGNAL \FSMSEF|Selector0~1_combout\ : std_logic;
 SIGNAL \FSMSEF|E_Atual.Bgn~q\ : std_logic;
 SIGNAL \FSMSEF|Q0~combout\ : std_logic;
 SIGNAL \FSMSEF|Q1~combout\ : std_logic;
-SIGNAL \FSMSEF|Q2~0_combout\ : std_logic;
 SIGNAL \TEMP|cc60\ : std_logic_vector(31 DOWNTO 0);
 SIGNAL \TEMP|cc1\ : std_logic_vector(31 DOWNTO 0);
-SIGNAL \TEMP|ALT_INV_Add1~81_sumout\ : std_logic;
-SIGNAL \TEMP|ALT_INV_cc1\ : std_logic_vector(31 DOWNTO 0);
-SIGNAL \ALT_INV_reset~input_o\ : std_logic;
-SIGNAL \ALT_INV_PvA~input_o\ : std_logic;
-SIGNAL \ALT_INV_Noturno~input_o\ : std_logic;
-SIGNAL \ALT_INV_PvB~input_o\ : std_logic;
-SIGNAL \TEMP|ALT_INV_d0~combout\ : std_logic;
-SIGNAL \TEMP|conter:2:CO2:Ci|ALT_INV_QI~q\ : std_logic;
 SIGNAL \TEMP|ALT_INV_Equal0~6_combout\ : std_logic;
 SIGNAL \TEMP|ALT_INV_Equal0~5_combout\ : std_logic;
 SIGNAL \TEMP|ALT_INV_Equal0~4_combout\ : std_logic;
+SIGNAL \TEMP|ALT_INV_cc1\ : std_logic_vector(31 DOWNTO 0);
 SIGNAL \TEMP|ALT_INV_Equal0~3_combout\ : std_logic;
 SIGNAL \TEMP|ALT_INV_Equal0~2_combout\ : std_logic;
 SIGNAL \TEMP|ALT_INV_Equal0~1_combout\ : std_logic;
@@ -284,7 +276,6 @@ SIGNAL \TEMP|ALT_INV_d1~combout\ : std_logic;
 SIGNAL \TEMP|conter:1:CO1:Ci|ALT_INV_QI~q\ : std_logic;
 SIGNAL \TEMP|conter:0:INITC:Ci|ALT_INV_Q~q\ : std_logic;
 SIGNAL \TEMP|conter:0:INITC:Ci|ALT_INV_QI~q\ : std_logic;
-SIGNAL \FSMSEF|ALT_INV_c1s~combout\ : std_logic;
 SIGNAL \TEMP|ALT_INV_temp1s~q\ : std_logic;
 SIGNAL \TEMP|ALT_INV_cout~1_combout\ : std_logic;
 SIGNAL \FSMSEF|ALT_INV_c5s~combout\ : std_logic;
@@ -295,7 +286,7 @@ SIGNAL \TEMP|conter:3:CO3:Ci|ALT_INV_Q~q\ : std_logic;
 SIGNAL \TEMP|conter:1:CO1:Ci|ALT_INV_Q~q\ : std_logic;
 SIGNAL \FSMSEF|ALT_INV_E_Atual.eVdA~q\ : std_logic;
 SIGNAL \FSMSEF|ALT_INV_Selector0~0_combout\ : std_logic;
-SIGNAL \FSMSEF|ALT_INV_Q2~0_combout\ : std_logic;
+SIGNAL \FSMSEF|ALT_INV_Q2~combout\ : std_logic;
 SIGNAL \FSMSEF|ALT_INV_E_Atual.Apagado~q\ : std_logic;
 SIGNAL \FSMSEF|ALT_INV_E_Atual.Piscante~q\ : std_logic;
 SIGNAL \FSMSEF|ALT_INV_E_Atual.eAmB~q\ : std_logic;
@@ -303,6 +294,13 @@ SIGNAL \FSMSEF|ALT_INV_E_Atual.eVdB~q\ : std_logic;
 SIGNAL \FSMSEF|ALT_INV_E_Atual.eAmA~q\ : std_logic;
 SIGNAL \FSMSEF|ALT_INV_E_Atual.Bgn~q\ : std_logic;
 SIGNAL \TEMP|ALT_INV_Add0~81_sumout\ : std_logic;
+SIGNAL \ALT_INV_reset~input_o\ : std_logic;
+SIGNAL \ALT_INV_PvA~input_o\ : std_logic;
+SIGNAL \ALT_INV_Noturno~input_o\ : std_logic;
+SIGNAL \ALT_INV_PvB~input_o\ : std_logic;
+SIGNAL \TEMP|ALT_INV_d0~combout\ : std_logic;
+SIGNAL \TEMP|conter:2:CO2:Ci|ALT_INV_QI~q\ : std_logic;
+SIGNAL \TEMP|ALT_INV_Add1~81_sumout\ : std_logic;
 
 BEGIN
 
@@ -317,12 +315,57 @@ Q2 <= ww_Q2;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
+\TEMP|ALT_INV_Equal0~6_combout\ <= NOT \TEMP|Equal0~6_combout\;
+\TEMP|ALT_INV_Equal0~5_combout\ <= NOT \TEMP|Equal0~5_combout\;
+\TEMP|ALT_INV_Equal0~4_combout\ <= NOT \TEMP|Equal0~4_combout\;
+\TEMP|ALT_INV_cc1\(0) <= NOT \TEMP|cc1\(0);
+\TEMP|ALT_INV_Equal0~3_combout\ <= NOT \TEMP|Equal0~3_combout\;
+\TEMP|ALT_INV_Equal0~2_combout\ <= NOT \TEMP|Equal0~2_combout\;
+\TEMP|ALT_INV_Equal0~1_combout\ <= NOT \TEMP|Equal0~1_combout\;
+\TEMP|ALT_INV_Equal0~0_combout\ <= NOT \TEMP|Equal0~0_combout\;
+\FSMSEF|ALT_INV_c1m~combout\ <= NOT \FSMSEF|c1m~combout\;
+\TEMP|ALT_INV_Equal1~6_combout\ <= NOT \TEMP|Equal1~6_combout\;
+\TEMP|ALT_INV_Equal1~5_combout\ <= NOT \TEMP|Equal1~5_combout\;
+\TEMP|ALT_INV_Equal1~4_combout\ <= NOT \TEMP|Equal1~4_combout\;
+\TEMP|ALT_INV_cc60\(0) <= NOT \TEMP|cc60\(0);
+\TEMP|ALT_INV_Equal1~3_combout\ <= NOT \TEMP|Equal1~3_combout\;
+\TEMP|ALT_INV_Equal1~2_combout\ <= NOT \TEMP|Equal1~2_combout\;
+\TEMP|ALT_INV_Equal1~1_combout\ <= NOT \TEMP|Equal1~1_combout\;
+\TEMP|ALT_INV_Equal1~0_combout\ <= NOT \TEMP|Equal1~0_combout\;
+\TEMP|ALT_INV_d1~combout\ <= NOT \TEMP|d1~combout\;
+\TEMP|conter:1:CO1:Ci|ALT_INV_QI~q\ <= NOT \TEMP|conter:1:CO1:Ci|QI~q\;
+\TEMP|conter:0:INITC:Ci|ALT_INV_Q~q\ <= NOT \TEMP|conter:0:INITC:Ci|Q~q\;
+\TEMP|conter:0:INITC:Ci|ALT_INV_QI~q\ <= NOT \TEMP|conter:0:INITC:Ci|QI~q\;
+\TEMP|ALT_INV_temp1s~q\ <= NOT \TEMP|temp1s~q\;
+\TEMP|ALT_INV_cout~1_combout\ <= NOT \TEMP|cout~1_combout\;
+\FSMSEF|ALT_INV_c5s~combout\ <= NOT \FSMSEF|c5s~combout\;
+\TEMP|ALT_INV_cout~3_combout\ <= NOT \TEMP|cout~3_combout\;
+\TEMP|ALT_INV_temp1m~q\ <= NOT \TEMP|temp1m~q\;
+\TEMP|ALT_INV_cout~2_combout\ <= NOT \TEMP|cout~2_combout\;
+\TEMP|conter:3:CO3:Ci|ALT_INV_Q~q\ <= NOT \TEMP|conter:3:CO3:Ci|Q~q\;
+\TEMP|conter:1:CO1:Ci|ALT_INV_Q~q\ <= NOT \TEMP|conter:1:CO1:Ci|Q~q\;
+\FSMSEF|ALT_INV_E_Atual.eVdA~q\ <= NOT \FSMSEF|E_Atual.eVdA~q\;
+\FSMSEF|ALT_INV_Selector0~0_combout\ <= NOT \FSMSEF|Selector0~0_combout\;
+\FSMSEF|ALT_INV_Q2~combout\ <= NOT \FSMSEF|Q2~combout\;
+\FSMSEF|ALT_INV_E_Atual.Apagado~q\ <= NOT \FSMSEF|E_Atual.Apagado~q\;
+\FSMSEF|ALT_INV_E_Atual.Piscante~q\ <= NOT \FSMSEF|E_Atual.Piscante~q\;
+\FSMSEF|ALT_INV_E_Atual.eAmB~q\ <= NOT \FSMSEF|E_Atual.eAmB~q\;
+\FSMSEF|ALT_INV_E_Atual.eVdB~q\ <= NOT \FSMSEF|E_Atual.eVdB~q\;
+\FSMSEF|ALT_INV_E_Atual.eAmA~q\ <= NOT \FSMSEF|E_Atual.eAmA~q\;
+\FSMSEF|ALT_INV_E_Atual.Bgn~q\ <= NOT \FSMSEF|E_Atual.Bgn~q\;
+\TEMP|ALT_INV_Add0~81_sumout\ <= NOT \TEMP|Add0~81_sumout\;
+\ALT_INV_reset~input_o\ <= NOT \reset~input_o\;
+\ALT_INV_PvA~input_o\ <= NOT \PvA~input_o\;
+\ALT_INV_Noturno~input_o\ <= NOT \Noturno~input_o\;
+\ALT_INV_PvB~input_o\ <= NOT \PvB~input_o\;
+\TEMP|ALT_INV_d0~combout\ <= NOT \TEMP|d0~combout\;
+\TEMP|conter:2:CO2:Ci|ALT_INV_QI~q\ <= NOT \TEMP|conter:2:CO2:Ci|QI~q\;
 \TEMP|ALT_INV_Add1~81_sumout\ <= NOT \TEMP|Add1~81_sumout\;
 \TEMP|ALT_INV_cc1\(4) <= NOT \TEMP|cc1\(4);
 \TEMP|ALT_INV_cc1\(3) <= NOT \TEMP|cc1\(3);
 \TEMP|ALT_INV_cc1\(2) <= NOT \TEMP|cc1\(2);
-\TEMP|ALT_INV_cc1\(30) <= NOT \TEMP|cc1\(30);
 \TEMP|ALT_INV_cc1\(1) <= NOT \TEMP|cc1\(1);
+\TEMP|ALT_INV_cc1\(30) <= NOT \TEMP|cc1\(30);
 \TEMP|ALT_INV_cc1\(29) <= NOT \TEMP|cc1\(29);
 \TEMP|ALT_INV_cc1\(28) <= NOT \TEMP|cc1\(28);
 \TEMP|ALT_INV_cc1\(27) <= NOT \TEMP|cc1\(27);
@@ -347,52 +390,6 @@ ww_devpor <= devpor;
 \TEMP|ALT_INV_cc1\(19) <= NOT \TEMP|cc1\(19);
 \TEMP|ALT_INV_cc1\(18) <= NOT \TEMP|cc1\(18);
 \TEMP|ALT_INV_cc1\(17) <= NOT \TEMP|cc1\(17);
-\ALT_INV_reset~input_o\ <= NOT \reset~input_o\;
-\ALT_INV_PvA~input_o\ <= NOT \PvA~input_o\;
-\ALT_INV_Noturno~input_o\ <= NOT \Noturno~input_o\;
-\ALT_INV_PvB~input_o\ <= NOT \PvB~input_o\;
-\TEMP|ALT_INV_d0~combout\ <= NOT \TEMP|d0~combout\;
-\TEMP|conter:2:CO2:Ci|ALT_INV_QI~q\ <= NOT \TEMP|conter:2:CO2:Ci|QI~q\;
-\TEMP|ALT_INV_Equal0~6_combout\ <= NOT \TEMP|Equal0~6_combout\;
-\TEMP|ALT_INV_Equal0~5_combout\ <= NOT \TEMP|Equal0~5_combout\;
-\TEMP|ALT_INV_Equal0~4_combout\ <= NOT \TEMP|Equal0~4_combout\;
-\TEMP|ALT_INV_cc1\(0) <= NOT \TEMP|cc1\(0);
-\TEMP|ALT_INV_Equal0~3_combout\ <= NOT \TEMP|Equal0~3_combout\;
-\TEMP|ALT_INV_Equal0~2_combout\ <= NOT \TEMP|Equal0~2_combout\;
-\TEMP|ALT_INV_Equal0~1_combout\ <= NOT \TEMP|Equal0~1_combout\;
-\TEMP|ALT_INV_Equal0~0_combout\ <= NOT \TEMP|Equal0~0_combout\;
-\FSMSEF|ALT_INV_c1m~combout\ <= NOT \FSMSEF|c1m~combout\;
-\TEMP|ALT_INV_Equal1~6_combout\ <= NOT \TEMP|Equal1~6_combout\;
-\TEMP|ALT_INV_Equal1~5_combout\ <= NOT \TEMP|Equal1~5_combout\;
-\TEMP|ALT_INV_Equal1~4_combout\ <= NOT \TEMP|Equal1~4_combout\;
-\TEMP|ALT_INV_cc60\(0) <= NOT \TEMP|cc60\(0);
-\TEMP|ALT_INV_Equal1~3_combout\ <= NOT \TEMP|Equal1~3_combout\;
-\TEMP|ALT_INV_Equal1~2_combout\ <= NOT \TEMP|Equal1~2_combout\;
-\TEMP|ALT_INV_Equal1~1_combout\ <= NOT \TEMP|Equal1~1_combout\;
-\TEMP|ALT_INV_Equal1~0_combout\ <= NOT \TEMP|Equal1~0_combout\;
-\TEMP|ALT_INV_d1~combout\ <= NOT \TEMP|d1~combout\;
-\TEMP|conter:1:CO1:Ci|ALT_INV_QI~q\ <= NOT \TEMP|conter:1:CO1:Ci|QI~q\;
-\TEMP|conter:0:INITC:Ci|ALT_INV_Q~q\ <= NOT \TEMP|conter:0:INITC:Ci|Q~q\;
-\TEMP|conter:0:INITC:Ci|ALT_INV_QI~q\ <= NOT \TEMP|conter:0:INITC:Ci|QI~q\;
-\FSMSEF|ALT_INV_c1s~combout\ <= NOT \FSMSEF|c1s~combout\;
-\TEMP|ALT_INV_temp1s~q\ <= NOT \TEMP|temp1s~q\;
-\TEMP|ALT_INV_cout~1_combout\ <= NOT \TEMP|cout~1_combout\;
-\FSMSEF|ALT_INV_c5s~combout\ <= NOT \FSMSEF|c5s~combout\;
-\TEMP|ALT_INV_cout~3_combout\ <= NOT \TEMP|cout~3_combout\;
-\TEMP|ALT_INV_temp1m~q\ <= NOT \TEMP|temp1m~q\;
-\TEMP|ALT_INV_cout~2_combout\ <= NOT \TEMP|cout~2_combout\;
-\TEMP|conter:3:CO3:Ci|ALT_INV_Q~q\ <= NOT \TEMP|conter:3:CO3:Ci|Q~q\;
-\TEMP|conter:1:CO1:Ci|ALT_INV_Q~q\ <= NOT \TEMP|conter:1:CO1:Ci|Q~q\;
-\FSMSEF|ALT_INV_E_Atual.eVdA~q\ <= NOT \FSMSEF|E_Atual.eVdA~q\;
-\FSMSEF|ALT_INV_Selector0~0_combout\ <= NOT \FSMSEF|Selector0~0_combout\;
-\FSMSEF|ALT_INV_Q2~0_combout\ <= NOT \FSMSEF|Q2~0_combout\;
-\FSMSEF|ALT_INV_E_Atual.Apagado~q\ <= NOT \FSMSEF|E_Atual.Apagado~q\;
-\FSMSEF|ALT_INV_E_Atual.Piscante~q\ <= NOT \FSMSEF|E_Atual.Piscante~q\;
-\FSMSEF|ALT_INV_E_Atual.eAmB~q\ <= NOT \FSMSEF|E_Atual.eAmB~q\;
-\FSMSEF|ALT_INV_E_Atual.eVdB~q\ <= NOT \FSMSEF|E_Atual.eVdB~q\;
-\FSMSEF|ALT_INV_E_Atual.eAmA~q\ <= NOT \FSMSEF|E_Atual.eAmA~q\;
-\FSMSEF|ALT_INV_E_Atual.Bgn~q\ <= NOT \FSMSEF|E_Atual.Bgn~q\;
-\TEMP|ALT_INV_Add0~81_sumout\ <= NOT \TEMP|Add0~81_sumout\;
 \TEMP|ALT_INV_cc1\(24) <= NOT \TEMP|cc1\(24);
 \TEMP|ALT_INV_cc1\(23) <= NOT \TEMP|cc1\(23);
 \TEMP|ALT_INV_cc60\(26) <= NOT \TEMP|cc60\(26);
@@ -459,7 +456,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \FSMSEF|ALT_INV_Q2~0_combout\,
+	i => \FSMSEF|Q2~combout\,
 	devoe => ww_devoe,
 	o => \Q2~output_o\);
 
@@ -517,10 +514,10 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TEMP|cc1\(0));
 
-\TEMP|Add0~109\ : cyclonev_lcell_comb
+\TEMP|Add0~113\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TEMP|Add0~109_sumout\ = SUM(( \TEMP|cc1\(1) ) + ( GND ) + ( \TEMP|Add0~82\ ))
--- \TEMP|Add0~110\ = CARRY(( \TEMP|cc1\(1) ) + ( GND ) + ( \TEMP|Add0~82\ ))
+-- \TEMP|Add0~113_sumout\ = SUM(( \TEMP|cc1\(1) ) + ( GND ) + ( \TEMP|Add0~82\ ))
+-- \TEMP|Add0~114\ = CARRY(( \TEMP|cc1\(1) ) + ( GND ) + ( \TEMP|Add0~82\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -531,8 +528,8 @@ GENERIC MAP (
 PORT MAP (
 	datad => \TEMP|ALT_INV_cc1\(1),
 	cin => \TEMP|Add0~82\,
-	sumout => \TEMP|Add0~109_sumout\,
-	cout => \TEMP|Add0~110\);
+	sumout => \TEMP|Add0~113_sumout\,
+	cout => \TEMP|Add0~114\);
 
 \TEMP|cc1[1]\ : dffeas
 -- pragma translate_off
@@ -542,7 +539,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \clock~input_o\,
-	d => \TEMP|Add0~109_sumout\,
+	d => \TEMP|Add0~113_sumout\,
 	sclr => \TEMP|Equal0~6_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
@@ -550,8 +547,8 @@ PORT MAP (
 
 \TEMP|Add0~117\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TEMP|Add0~117_sumout\ = SUM(( \TEMP|cc1\(2) ) + ( GND ) + ( \TEMP|Add0~110\ ))
--- \TEMP|Add0~118\ = CARRY(( \TEMP|cc1\(2) ) + ( GND ) + ( \TEMP|Add0~110\ ))
+-- \TEMP|Add0~117_sumout\ = SUM(( \TEMP|cc1\(2) ) + ( GND ) + ( \TEMP|Add0~114\ ))
+-- \TEMP|Add0~118\ = CARRY(( \TEMP|cc1\(2) ) + ( GND ) + ( \TEMP|Add0~114\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -561,7 +558,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	datad => \TEMP|ALT_INV_cc1\(2),
-	cin => \TEMP|Add0~110\,
+	cin => \TEMP|Add0~114\,
 	sumout => \TEMP|Add0~117_sumout\,
 	cout => \TEMP|Add0~118\);
 
@@ -1450,10 +1447,10 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \TEMP|cc1\(29));
 
-\TEMP|Add0~113\ : cyclonev_lcell_comb
+\TEMP|Add0~109\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TEMP|Add0~113_sumout\ = SUM(( \TEMP|cc1\(30) ) + ( GND ) + ( \TEMP|Add0~106\ ))
--- \TEMP|Add0~114\ = CARRY(( \TEMP|cc1\(30) ) + ( GND ) + ( \TEMP|Add0~106\ ))
+-- \TEMP|Add0~109_sumout\ = SUM(( \TEMP|cc1\(30) ) + ( GND ) + ( \TEMP|Add0~106\ ))
+-- \TEMP|Add0~110\ = CARRY(( \TEMP|cc1\(30) ) + ( GND ) + ( \TEMP|Add0~106\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1464,8 +1461,8 @@ GENERIC MAP (
 PORT MAP (
 	datad => \TEMP|ALT_INV_cc1\(30),
 	cin => \TEMP|Add0~106\,
-	sumout => \TEMP|Add0~113_sumout\,
-	cout => \TEMP|Add0~114\);
+	sumout => \TEMP|Add0~109_sumout\,
+	cout => \TEMP|Add0~110\);
 
 \TEMP|cc1[30]\ : dffeas
 -- pragma translate_off
@@ -1475,7 +1472,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \clock~input_o\,
-	d => \TEMP|Add0~113_sumout\,
+	d => \TEMP|Add0~109_sumout\,
 	sclr => \TEMP|Equal0~6_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
@@ -1483,7 +1480,7 @@ PORT MAP (
 
 \TEMP|Add0~41\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TEMP|Add0~41_sumout\ = SUM(( \TEMP|cc1\(31) ) + ( GND ) + ( \TEMP|Add0~114\ ))
+-- \TEMP|Add0~41_sumout\ = SUM(( \TEMP|cc1\(31) ) + ( GND ) + ( \TEMP|Add0~110\ ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1493,7 +1490,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	datad => \TEMP|ALT_INV_cc1\(31),
-	cin => \TEMP|Add0~114\,
+	cin => \TEMP|Add0~110\,
 	sumout => \TEMP|Add0~41_sumout\);
 
 \TEMP|cc1[31]\ : dffeas
@@ -1569,18 +1566,18 @@ PORT MAP (
 
 \TEMP|Equal0~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TEMP|Equal0~5_combout\ = ( !\TEMP|cc1\(3) & ( !\TEMP|cc1\(4) & ( (!\TEMP|cc1\(29) & (\TEMP|cc1\(1) & (!\TEMP|cc1\(30) & !\TEMP|cc1\(2)))) ) ) )
+-- \TEMP|Equal0~5_combout\ = ( !\TEMP|cc1\(3) & ( !\TEMP|cc1\(4) & ( (!\TEMP|cc1\(29) & (!\TEMP|cc1\(30) & (\TEMP|cc1\(1) & !\TEMP|cc1\(2)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0010000000000000000000000000000000000000000000000000000000000000",
+	lut_mask => "0000100000000000000000000000000000000000000000000000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \TEMP|ALT_INV_cc1\(29),
-	datab => \TEMP|ALT_INV_cc1\(1),
-	datac => \TEMP|ALT_INV_cc1\(30),
+	datab => \TEMP|ALT_INV_cc1\(30),
+	datac => \TEMP|ALT_INV_cc1\(1),
 	datad => \TEMP|ALT_INV_cc1\(2),
 	datae => \TEMP|ALT_INV_cc1\(3),
 	dataf => \TEMP|ALT_INV_cc1\(4),
@@ -2983,12 +2980,12 @@ PORT MAP (
 
 \TEMP|Equal1~4\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TEMP|Equal1~4_combout\ = ( \TEMP|cc60\(3) & ( \TEMP|cc60\(2) & ( (\TEMP|cc60\(0) & (!\TEMP|cc60\(28) & (!\TEMP|cc60\(5) & \TEMP|cc60\(4)))) ) ) )
+-- \TEMP|Equal1~4_combout\ = ( !\TEMP|cc60\(3) & ( !\TEMP|cc60\(2) & ( (\TEMP|cc60\(0) & (!\TEMP|cc60\(28) & (!\TEMP|cc60\(5) & !\TEMP|cc60\(4)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000000000000000000000000000000000000000000001000000",
+	lut_mask => "0100000000000000000000000000000000000000000000000000000000000000",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -3252,36 +3249,36 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \FSMSEF|E_Atual.Piscante~q\);
 
-\FSMSEF|c1s\ : cyclonev_lcell_comb
+\FSMSEF|Q2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \FSMSEF|c1s~combout\ = (\FSMSEF|E_Atual.Bgn~q\ & (!\FSMSEF|E_Atual.Piscante~q\ & !\FSMSEF|E_Atual.Apagado~q\))
+-- \FSMSEF|Q2~combout\ = (!\FSMSEF|E_Atual.Bgn~q\) # ((\FSMSEF|E_Atual.Apagado~q\) # (\FSMSEF|E_Atual.Piscante~q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0100000001000000010000000100000001000000010000000100000001000000",
+	lut_mask => "1011111110111111101111111011111110111111101111111011111110111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \FSMSEF|ALT_INV_E_Atual.Bgn~q\,
 	datab => \FSMSEF|ALT_INV_E_Atual.Piscante~q\,
 	datac => \FSMSEF|ALT_INV_E_Atual.Apagado~q\,
-	combout => \FSMSEF|c1s~combout\);
+	combout => \FSMSEF|Q2~combout\);
 
 \TEMP|cout~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \TEMP|cout~0_combout\ = LCELL((!\FSMSEF|c1s~combout\ & ((\TEMP|temp1s~q\))) # (\FSMSEF|c1s~combout\ & (!\TEMP|cout~1_combout\)))
+-- \TEMP|cout~0_combout\ = LCELL((!\FSMSEF|Q2~combout\ & (!\TEMP|cout~1_combout\)) # (\FSMSEF|Q2~combout\ & ((\TEMP|temp1s~q\))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0011101000111010001110100011101000111010001110100011101000111010",
+	lut_mask => "1010001110100011101000111010001110100011101000111010001110100011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \TEMP|ALT_INV_cout~1_combout\,
 	datab => \TEMP|ALT_INV_temp1s~q\,
-	datac => \FSMSEF|ALT_INV_c1s~combout\,
+	datac => \FSMSEF|ALT_INV_Q2~combout\,
 	combout => \TEMP|cout~0_combout\);
 
 \FSMSEF|Selector0~0\ : cyclonev_lcell_comb
@@ -3366,21 +3363,6 @@ PORT MAP (
 	datab => \FSMSEF|ALT_INV_E_Atual.eAmB~q\,
 	datac => \FSMSEF|ALT_INV_E_Atual.Piscante~q\,
 	combout => \FSMSEF|Q1~combout\);
-
-\FSMSEF|Q2~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \FSMSEF|Q2~0_combout\ = (\FSMSEF|E_Atual.Bgn~q\ & !\FSMSEF|E_Atual.Apagado~q\)
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0100010001000100010001000100010001000100010001000100010001000100",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \FSMSEF|ALT_INV_E_Atual.Bgn~q\,
-	datab => \FSMSEF|ALT_INV_E_Atual.Apagado~q\,
-	combout => \FSMSEF|Q2~0_combout\);
 
 ww_Q0 <= \Q0~output_o\;
 

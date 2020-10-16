@@ -1,0 +1,31 @@
+v 4
+file . "asdasdad.vhd" "b272094a4371906e09c91247106b80bc359a9a8c" "20191202030438.738":
+  entity s_8df8e25fab239a96868a773c428cf5a8a29e49e43806d at 1( 0) + 0 on 33;
+  architecture behavioral of s_8df8e25fab239a96868a773c428cf5a8a29e49e43806d at 1( 0) + 713 on 34;
+  entity s_801ae597f34d85cada5c0f8602e8c77a587fae7e8d at 1( 0) + 3088 on 35;
+  architecture behavioral of s_801ae597f34d85cada5c0f8602e8c77a587fae7e8d at 1( 0) + 3645 on 36;
+  entity polilegsc_tb at 1( 0) + 5937 on 37;
+  architecture behavioral of polilegsc_tb at 1( 0) + 6038 on 38;
+file . "Poli.vhd" "851b894516f27fbe6556295afe05c5f891f6d7f1" "20191202030422.035":
+  entity reg at 4( 205) + 0 on 11;
+  architecture r of reg at 22( 526) + 0 on 12;
+  entity regfile at 41( 981) + 0 on 13;
+  architecture regbanch of regfile at 64( 1521) + 0 on 14;
+  entity signextend at 113( 3008) + 0 on 15;
+  architecture extensor of signextend at 123( 3235) + 0 on 16;
+  entity fulladder at 145( 3882) + 0 on 17;
+  architecture fulladder of fulladder at 156( 4029) + 0 on 18;
+  entity alu1bit at 171( 4417) + 0 on 19;
+  architecture alu1bit of alu1bit at 183( 4653) + 0 on 20;
+  entity orgasm at 220( 5634) + 0 on 21;
+  architecture orgasm of orgasm at 230( 5779) + 0 on 22;
+  entity alu at 238( 6076) + 0 on 23;
+  architecture alu of alu at 256( 6486) + 0 on 24;
+  entity alucontrol at 328( 8605) + 0 on 25;
+  architecture alucontrol of alucontrol at 339( 8828) + 0 on 26;
+  entity datapath at 361( 9457) + 0 on 27;
+  architecture herewego of datapath at 390( 10322) + 0 on 28;
+  entity controlunit at 552( 14494) + 0 on 29;
+  architecture controlunit of controlunit at 572( 14965) + 0 on 30;
+  entity polilegsc at 646( 17890) + 0 on 31;
+  architecture polilegsc of polilegsc at 664( 18337) + 0 on 32;

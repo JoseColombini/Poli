@@ -1,0 +1,24 @@
+v 4
+file . "comparador.vhd" "1c0e0eaf9211b071dc9433971776a85de0bffdc6" "20200412202645.405":
+  entity comparador at 1( 0) + 0 on 31;
+  architecture comportamental1 of comparador at 11( 168) + 0 on 32;
+file . "ALUControl.vhd" "6f43ff8b15623349d40cc321e7a1de091c9b0f51" "20191119174915.322":
+  entity alucontrol at 1( 0) + 0 on 27;
+  architecture alucontrol of alucontrol at 12( 223) + 0 on 28;
+file . "T4A2.vhd" "9a6d5fdc51a99696c458acf89daef4f8667ce3ac" "20191115225902.343":
+  entity fulladder at 1( 0) + 0 on 19;
+  architecture fulladder of fulladder at 12( 147) + 0 on 20;
+  entity alu1bit at 26( 511) + 0 on 21;
+  architecture alu1bit of alu1bit at 38( 747) + 0 on 22;
+  entity orgasm at 75( 1728) + 0 on 23;
+  architecture orgasm of orgasm at 85( 1873) + 0 on 24;
+  entity alu at 91( 1966) + 0 on 25;
+  architecture alu of alu at 109( 2382) + 0 on 26;
+file . "ControlUnit.vhd" "d168e7d06de357aa45921b51b77abd6b97d28742" "20191128130102.773":
+  entity controlunit at 1( 0) + 0 on 29;
+  architecture controlunit of controlunit at 21( 471) + 0 on 30;
+file . "contador.vhd" "a3d6249e9fe49387905536977c0123f370b59fe3" "20200412215938.315":
+  entity contador at 1( 0) + 0 on 41;
+  architecture comporatamental2 of contador at 14( 286) + 0 on 42;
+  entity contacompara at 44( 899) + 0 on 43;
+  architecture contacompara of contacompara at 58( 1175) + 0 on 44;

@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "05/04/2020 01:22:52"
+-- DATE "06/23/2020 17:11:09"
 
 -- 
 -- Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -89,9 +89,11 @@ SIGNAL \PvA~input_o\ : std_logic;
 SIGNAL \PvB~input_o\ : std_logic;
 SIGNAL \Selector2~0_combout\ : std_logic;
 SIGNAL \E_Atual.eVdB~q\ : std_logic;
+SIGNAL \E_Futuro.eAmB~0_combout\ : std_logic;
 SIGNAL \E_Atual.eAmB~q\ : std_logic;
 SIGNAL \Selector1~0_combout\ : std_logic;
 SIGNAL \E_Atual.eVdA~q\ : std_logic;
+SIGNAL \E_Futuro.eAmA~0_combout\ : std_logic;
 SIGNAL \E_Atual.eAmA~q\ : std_logic;
 SIGNAL \Selector0~0_combout\ : std_logic;
 SIGNAL \Selector0~1_combout\ : std_logic;
@@ -101,10 +103,10 @@ SIGNAL \c5s~0_combout\ : std_logic;
 SIGNAL \c1m~0_combout\ : std_logic;
 SIGNAL \Q0~0_combout\ : std_logic;
 SIGNAL \Q1~0_combout\ : std_logic;
-SIGNAL \ALT_INV_reset~input_o\ : std_logic;
-SIGNAL \ALT_INV_PvB~input_o\ : std_logic;
-SIGNAL \ALT_INV_PvA~input_o\ : std_logic;
 SIGNAL \ALT_INV_Noturno~input_o\ : std_logic;
+SIGNAL \ALT_INV_PvA~input_o\ : std_logic;
+SIGNAL \ALT_INV_PvB~input_o\ : std_logic;
+SIGNAL \ALT_INV_reset~input_o\ : std_logic;
 SIGNAL \ALT_INV_Selector0~0_combout\ : std_logic;
 SIGNAL \ALT_INV_E_Atual.eVdB~q\ : std_logic;
 SIGNAL \ALT_INV_E_Atual.eVdA~q\ : std_logic;
@@ -130,10 +132,10 @@ Q2 <= ww_Q2;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\ALT_INV_reset~input_o\ <= NOT \reset~input_o\;
-\ALT_INV_PvB~input_o\ <= NOT \PvB~input_o\;
-\ALT_INV_PvA~input_o\ <= NOT \PvA~input_o\;
 \ALT_INV_Noturno~input_o\ <= NOT \Noturno~input_o\;
+\ALT_INV_PvA~input_o\ <= NOT \PvA~input_o\;
+\ALT_INV_PvB~input_o\ <= NOT \PvB~input_o\;
+\ALT_INV_reset~input_o\ <= NOT \reset~input_o\;
 \ALT_INV_Selector0~0_combout\ <= NOT \Selector0~0_combout\;
 \ALT_INV_E_Atual.eVdB~q\ <= NOT \E_Atual.eVdB~q\;
 \ALT_INV_E_Atual.eVdA~q\ <= NOT \E_Atual.eVdA~q\;
@@ -211,7 +213,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => VCC,
+	i => \c1s~0_combout\,
 	devoe => ww_devoe,
 	o => \Q2~output_o\);
 
@@ -326,20 +328,22 @@ PORT MAP (
 
 \Selector2~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Selector2~0_combout\ = ( \Noturno~input_o\ & ( (\E_Atual.eAmA~q\ & \PvB~input_o\) ) ) # ( !\Noturno~input_o\ & ( (\PvB~input_o\ & (((!\E_Atual.Bgn~q\ & !\PvA~input_o\)) # (\E_Atual.eAmA~q\))) ) )
+-- \Selector2~0_combout\ = ( \PvB~input_o\ & ( \Noturno~input_o\ & ( ((\E_Atual.eVdB~q\ & !\PvA~input_o\)) # (\E_Atual.eAmA~q\) ) ) ) # ( \PvB~input_o\ & ( !\Noturno~input_o\ & ( ((!\PvA~input_o\ & ((!\E_Atual.Bgn~q\) # (\E_Atual.eVdB~q\)))) # 
+-- (\E_Atual.eAmA~q\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000010110011000000000011001100000000101100110000000000110011",
+	lut_mask => "0000000000000000101111110011001100000000000000000011111100110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ALT_INV_E_Atual.Bgn~q\,
 	datab => \ALT_INV_E_Atual.eAmA~q\,
-	datac => \ALT_INV_PvA~input_o\,
-	datad => \ALT_INV_PvB~input_o\,
-	datae => \ALT_INV_Noturno~input_o\,
+	datac => \ALT_INV_E_Atual.eVdB~q\,
+	datad => \ALT_INV_PvA~input_o\,
+	datae => \ALT_INV_PvB~input_o\,
+	dataf => \ALT_INV_Noturno~input_o\,
 	combout => \Selector2~0_combout\);
 
 \E_Atual.eVdB\ : dffeas
@@ -356,6 +360,22 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \E_Atual.eVdB~q\);
 
+\E_Futuro.eAmB~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \E_Futuro.eAmB~0_combout\ = (\E_Atual.eVdB~q\ & ((!\PvB~input_o\) # (\PvA~input_o\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0101000101010001010100010101000101010001010100010101000101010001",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ALT_INV_E_Atual.eVdB~q\,
+	datab => \ALT_INV_PvA~input_o\,
+	datac => \ALT_INV_PvB~input_o\,
+	combout => \E_Futuro.eAmB~0_combout\);
+
 \E_Atual.eAmB\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -364,7 +384,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \clock~input_o\,
-	d => \E_Atual.eVdB~q\,
+	d => \E_Futuro.eAmB~0_combout\,
 	clrn => \ALT_INV_reset~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
@@ -372,19 +392,22 @@ PORT MAP (
 
 \Selector1~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Selector1~0_combout\ = (\PvA~input_o\ & (((!\E_Atual.Bgn~q\ & !\Noturno~input_o\)) # (\E_Atual.eAmB~q\)))
+-- \Selector1~0_combout\ = ( \PvB~input_o\ & ( \Noturno~input_o\ & ( (\E_Atual.eAmB~q\ & \PvA~input_o\) ) ) ) # ( !\PvB~input_o\ & ( \Noturno~input_o\ & ( (\PvA~input_o\ & ((\E_Atual.eVdA~q\) # (\E_Atual.eAmB~q\))) ) ) ) # ( \PvB~input_o\ & ( 
+-- !\Noturno~input_o\ & ( (\PvA~input_o\ & ((!\E_Atual.Bgn~q\) # (\E_Atual.eAmB~q\))) ) ) ) # ( !\PvB~input_o\ & ( !\Noturno~input_o\ & ( (\PvA~input_o\ & ((!\E_Atual.Bgn~q\) # ((\E_Atual.eVdA~q\) # (\E_Atual.eAmB~q\)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101100000011000010110000001100001011000000110000101100000011",
+	lut_mask => "0000000010111111000000001011101100000000001111110000000000110011",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ALT_INV_E_Atual.Bgn~q\,
 	datab => \ALT_INV_E_Atual.eAmB~q\,
-	datac => \ALT_INV_PvA~input_o\,
-	datad => \ALT_INV_Noturno~input_o\,
+	datac => \ALT_INV_E_Atual.eVdA~q\,
+	datad => \ALT_INV_PvA~input_o\,
+	datae => \ALT_INV_PvB~input_o\,
+	dataf => \ALT_INV_Noturno~input_o\,
 	combout => \Selector1~0_combout\);
 
 \E_Atual.eVdA\ : dffeas
@@ -401,6 +424,22 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \E_Atual.eVdA~q\);
 
+\E_Futuro.eAmA~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \E_Futuro.eAmA~0_combout\ = (\E_Atual.eVdA~q\ & ((!\PvA~input_o\) # (\PvB~input_o\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0100010101000101010001010100010101000101010001010100010101000101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ALT_INV_E_Atual.eVdA~q\,
+	datab => \ALT_INV_PvA~input_o\,
+	datac => \ALT_INV_PvB~input_o\,
+	combout => \E_Futuro.eAmA~0_combout\);
+
 \E_Atual.eAmA\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -409,7 +448,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \clock~input_o\,
-	d => \E_Atual.eVdA~q\,
+	d => \E_Futuro.eAmA~0_combout\,
 	clrn => \ALT_INV_reset~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,

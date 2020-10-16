@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/04/2020 02:12:18"
+-- Generated on "06/23/2020 16:00:20"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          CircuitoTemporizador
 -- 
@@ -63,9 +63,9 @@ t_prcs_clock: PROCESS
 BEGIN
 LOOP
 	clock <= '0';
-	WAIT FOR 5000 ps;
+	WAIT FOR 500 ps;
 	clock <= '1';
-	WAIT FOR 5000 ps;
+	WAIT FOR 500 ps;
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_clock;
@@ -73,24 +73,28 @@ END PROCESS t_prcs_clock;
 -- c1s
 t_prcs_c1s: PROCESS
 BEGIN
-	c1s <= '1';
-	WAIT FOR 80000 ps;
 	c1s <= '0';
+	WAIT FOR 970000 ps;
+	c1s <= '1';
 WAIT;
 END PROCESS t_prcs_c1s;
 
 -- c5s
 t_prcs_c5s: PROCESS
 BEGIN
-	c5s <= '0';
-	WAIT FOR 80000 ps;
 	c5s <= '1';
+	WAIT FOR 110000 ps;
+	c5s <= '0';
 WAIT;
 END PROCESS t_prcs_c5s;
 
 -- c1m
 t_prcs_c1m: PROCESS
 BEGIN
+	c1m <= '0';
+	WAIT FOR 120000 ps;
+	c1m <= '1';
+	WAIT FOR 840000 ps;
 	c1m <= '0';
 WAIT;
 END PROCESS t_prcs_c1m;

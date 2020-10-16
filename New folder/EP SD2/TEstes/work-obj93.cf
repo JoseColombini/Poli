@@ -1,0 +1,4 @@
+v 4
+file . "MaquinaES.vhd" "96d5ff1a835ea647dd5b2f9248c31b34dcbd09e6" "20200427135409.998":
+  entity maquina_estado at 1( 0) + 0 on 11;
+  architecture comportamental of maquina_estado at 15( 356) + 0 on 12;

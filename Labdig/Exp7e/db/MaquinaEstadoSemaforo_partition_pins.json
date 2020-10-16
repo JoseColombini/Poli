@@ -32,19 +32,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "clock",
-					"strict" : false
-				},
-				{
-					"name" : "reset",
-					"strict" : false
-				},
-				{
 					"name" : "PvA",
 					"strict" : false
 				},
 				{
 					"name" : "PvB",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
 					"strict" : false
 				}
 			]

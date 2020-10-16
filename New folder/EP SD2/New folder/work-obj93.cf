@@ -1,0 +1,6 @@
+v 4
+file . "Banco.vhd" "78ac5536524570e9c400673bd5fcab2a3f6b973f" "20190922214319.259":
+  entity reg at 1( 0) + 0 on 27;
+  architecture r of reg at 19( 326) + 0 on 28;
+  entity regfile at 45( 678) + 0 on 29;
+  architecture regbanch of regfile at 68( 1228) + 0 on 30;

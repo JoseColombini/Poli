@@ -40,15 +40,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "PvB",
+					"name" : "VeB",
 					"strict" : false
 				},
 				{
-					"name" : "Pd",
+					"name" : "PdA",
 					"strict" : false
 				},
 				{
-					"name" : "PvA",
+					"name" : "VeA",
+					"strict" : false
+				},
+				{
+					"name" : "PdB",
 					"strict" : false
 				}
 			]

@@ -1,0 +1,4 @@
+v 4
+file . "Gerenciador.vhd" "9a136db0abf75d28940648c21e3a5945ba8ff5e0" "20200525154739.408":
+  entity gerenciador at 158( 4710) + 0 on 13;
+  architecture gerenciador of gerenciador at 176( 5161) + 0 on 14;

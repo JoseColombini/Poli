@@ -1,0 +1,16 @@
+Quartus Prime Archive log --	D:/GitHub/Poli/Labdig/Exp8/FSMexp8.qarlog
+
+Archive:	D:/GitHub/Poli/Labdig/Exp8/FSMexp8.qar
+Date:		Mon May 11 01:36:06 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/GitHub/Poli/Labdig/Exp8/FSMexp8.qpf
+D:/GitHub/Poli/Labdig/Exp8/FSMexp8.qsf
+D:/GitHub/Poli/Labdig/Exp8/FSMexp8.vhd
+D:/GitHub/Poli/Labdig/Exp8/Waveform.vwf
+d:/epqe/quartus/quartus/bin64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

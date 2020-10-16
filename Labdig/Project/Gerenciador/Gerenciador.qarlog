@@ -1,0 +1,16 @@
+Quartus Prime Archive log --	D:/GitHub/Poli/Labdig/Project/Gerenciador/Gerenciador.qarlog
+
+Archive:	D:/GitHub/Poli/Labdig/Project/Gerenciador/Gerenciador.qar
+Date:		Sun May 24 18:21:08 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/GitHub/Poli/Labdig/Project/Gerenciador/Gerenciador.qpf
+D:/GitHub/Poli/Labdig/Project/Gerenciador/Gerenciador.qsf
+D:/GitHub/Poli/Labdig/Project/Gerenciador/Gerenciador.vhd
+D:/GitHub/Poli/Labdig/Project/Gerenciador/Waveform.vwf
+d:/epqe/quartus/quartus/bin64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

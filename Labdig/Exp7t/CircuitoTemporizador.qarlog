@@ -1,15 +1,15 @@
-Quartus Prime Archive log --	D:/Labdig/Exp7t/CircuitoTemporizador.qarlog
+Quartus Prime Archive log --	D:/GitHub/Poli/Labdig/Exp7t/CircuitoTemporizador.qarlog
 
-Archive:	D:/Labdig/Exp7t/CircuitoTemporizador.qar
-Date:		Mon May 04 09:36:25 2020
+Archive:	D:/GitHub/Poli/Labdig/Exp7t/CircuitoTemporizador.qar
+Date:		Mon May 11 01:39:35 2020
 Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 	=========== Files Selected: ===========
-D:/Labdig/Exp7t/CircuitoTemporizador.qpf
-D:/Labdig/Exp7t/CircuitoTemporizador.qsf
-D:/Labdig/Exp7t/CircuitoTemporizador.vhd
-D:/Labdig/Exp7t/Waveform1.vwf
-D:/Labdig/Exp7t/fliflop.vhd
+D:/GitHub/Poli/Labdig/Exp7t/CircuitoTemporizador.qpf
+D:/GitHub/Poli/Labdig/Exp7t/CircuitoTemporizador.qsf
+D:/GitHub/Poli/Labdig/Exp7t/CircuitoTemporizador.vhd
+D:/GitHub/Poli/Labdig/Exp7t/Waveform1.vwf
+D:/GitHub/Poli/Labdig/Exp7t/fliflop.vhd
 d:/epqe/quartus/quartus/bin64/assignment_defaults.qdf
 	======= Total: 6 files to archive =======
 

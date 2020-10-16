@@ -1,0 +1,16 @@
+Quartus Prime Archive log --	D:/GitHub/Poli/Labdig/Project/FSMEl/FSMEl.qarlog
+
+Archive:	D:/GitHub/Poli/Labdig/Project/FSMEl/FSMEl.qar
+Date:		Sat May 23 15:38:01 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/GitHub/Poli/Labdig/Project/FSMEl/FSMEl.qpf
+D:/GitHub/Poli/Labdig/Project/FSMEl/FSMEl.qsf
+D:/GitHub/Poli/Labdig/Project/FSMEl/FSMEl.vhd
+D:/GitHub/Poli/Labdig/Project/FSMEl/Waveform.vwf
+d:/epqe/quartus/quartus/bin64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

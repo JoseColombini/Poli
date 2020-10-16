@@ -1,0 +1,34 @@
+|farol
+estado[0] => Equal0.IN2
+estado[0] => Equal1.IN0
+estado[0] => Equal2.IN1
+estado[0] => Equal3.IN2
+estado[0] => Equal4.IN2
+estado[0] => Equal5.IN2
+estado[0] => Equal6.IN1
+estado[1] => Equal0.IN1
+estado[1] => Equal1.IN2
+estado[1] => Equal2.IN2
+estado[1] => Equal3.IN1
+estado[1] => Equal4.IN1
+estado[1] => Equal5.IN0
+estado[1] => Equal6.IN0
+estado[2] => Equal0.IN0
+estado[2] => Equal1.IN1
+estado[2] => Equal2.IN0
+estado[2] => Equal3.IN0
+estado[2] => Equal4.IN0
+estado[2] => Equal5.IN1
+estado[2] => Equal6.IN2
+vda <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ama <= ama.DB_MAX_OUTPUT_PORT_TYPE
+vma <= vma.DB_MAX_OUTPUT_PORT_TYPE
+vdb <= vdb.DB_MAX_OUTPUT_PORT_TYPE
+amb <= amb.DB_MAX_OUTPUT_PORT_TYPE
+vmb <= vmb.DB_MAX_OUTPUT_PORT_TYPE
+vdpa <= vdpa.DB_MAX_OUTPUT_PORT_TYPE
+vmpa <= vmpa.DB_MAX_OUTPUT_PORT_TYPE
+vdpb <= vdpb.DB_MAX_OUTPUT_PORT_TYPE
+vmpb <= vmpb.DB_MAX_OUTPUT_PORT_TYPE
+
+

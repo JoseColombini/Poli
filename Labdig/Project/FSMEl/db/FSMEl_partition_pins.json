@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "do",
+					"strict" : false
+				},
+				{
+					"name" : "upDown[0]",
+					"strict" : false
+				},
+				{
+					"name" : "upDown[1]",
+					"strict" : false
+				},
+				{
+					"name" : "destiny[2]",
+					"strict" : false
+				},
+				{
+					"name" : "position[2]",
+					"strict" : false
+				},
+				{
+					"name" : "destiny[1]",
+					"strict" : false
+				},
+				{
+					"name" : "position[1]",
+					"strict" : false
+				},
+				{
+					"name" : "destiny[0]",
+					"strict" : false
+				},
+				{
+					"name" : "position[0]",
+					"strict" : false
+				},
+				{
+					"name" : "call",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

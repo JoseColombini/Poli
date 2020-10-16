@@ -7,19 +7,19 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/Labdig/Exp7e/simulation/qsim
+dD:/Labdig/Exp7e/simulation/qsim
 Emaquinaestadosemaforo
-Z1 w1588566172
-Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 OGn598C_0mX<WSGfCb?AK2
-Z3 DPx8 cyclonev 19 cyclonev_components 0 22 CcdNAEi>PYH4@n><]NQ]V2
-Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 QZo1Vh6en2ZO3=hNmAfQ>0
-Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z6 DPx6 altera 11 dffeas_pack 0 22 :S1C`o89Vbe5bV6`:6CaB3
-Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z10 DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
-R0
+Z0 w1592943069
+Z1 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 OGn598C_0mX<WSGfCb?AK2
+Z2 DPx8 cyclonev 19 cyclonev_components 0 22 CcdNAEi>PYH4@n><]NQ]V2
+Z3 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 QZo1Vh6en2ZO3=hNmAfQ>0
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 :S1C`o89Vbe5bV6`:6CaB3
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
+Z10 dD:/GitHub/Poli/Labdig/Exp7e/simulation/qsim
 Z11 8MaquinaEstadoSemaforo.vho
 Z12 FMaquinaEstadoSemaforo.vho
 l0
@@ -28,15 +28,16 @@ Vk9ZczUl0g];;l1Y<W<lEl2
 !s100 jXaeOSRMC4n8Ia8oiTb``1
 Z13 OV;C;10.5b;63
 32
-Z14 !s110 1588566173
+Z14 !s110 1592943070
 !i10b 1
-Z15 !s108 1588566173.000000
+Z15 !s108 1592943070.000000
 Z16 !s90 -work|work|MaquinaEstadoSemaforo.vho|
 Z17 !s107 MaquinaEstadoSemaforo.vho|
 !i113 1
 Z18 o-work work
 Z19 tExplicit 1 CvgOpt 0
 Astructure
+R1
 R2
 R3
 R4
@@ -45,12 +46,11 @@ R6
 R7
 R8
 R9
-R10
 DEx4 work 21 maquinaestadosemaforo 0 22 k9ZczUl0g];;l1Y<W<lEl2
-l117
+l119
 L54
-V4RhE61Mb<2f4QMCCiVWRI2
-!s100 8hF_Mh0QiC54ol99g<XC11
+V9;Y4m0ZD3dCEA5:j?2f4i1
+!s100 XPmb[;XFK=9:g9ESJ;QCJ2
 R13
 32
 R14
@@ -62,10 +62,10 @@ R17
 R18
 R19
 Emaquinaestadosemaforo_vhd_vec_tst
-Z20 w1588566170
+Z20 w1592943067
+R7
 R8
-R9
-R0
+R10
 Z21 8Waveform.vwf.vht
 Z22 FWaveform.vwf.vht
 l0
@@ -83,13 +83,13 @@ Z24 !s107 Waveform.vwf.vht|
 R18
 R19
 Amaquinaestadosemaforo_arch
+R7
 R8
-R9
 Z25 DEx4 work 33 maquinaestadosemaforo_vhd_vec_tst 0 22 [VlolWKn1_cNA]AGO;E@m2
 l62
 L33
-V]CcaSP;ZmA^Z9F1X]ZQ2e3
-!s100 inE91c<^8g9agZ2aU<6Re2
+Z26 V1CfND90<e_UVfc?>NgUc@2
+Z27 !s100 b0Z8I3429@R:oze;83jN>0
 R13
 32
 R14

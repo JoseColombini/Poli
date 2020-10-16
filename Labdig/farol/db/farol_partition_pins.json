@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "vda",
+					"strict" : false
+				},
+				{
+					"name" : "ama",
+					"strict" : false
+				},
+				{
+					"name" : "vma",
+					"strict" : false
+				},
+				{
+					"name" : "vdb",
+					"strict" : false
+				},
+				{
+					"name" : "amb",
+					"strict" : false
+				},
+				{
+					"name" : "vmb",
+					"strict" : false
+				},
+				{
+					"name" : "vdpa",
+					"strict" : false
+				},
+				{
+					"name" : "vmpa",
+					"strict" : false
+				},
+				{
+					"name" : "vdpb",
+					"strict" : false
+				},
+				{
+					"name" : "vmpb",
+					"strict" : false
+				},
+				{
+					"name" : "estado[0]",
+					"strict" : false
+				},
+				{
+					"name" : "estado[1]",
+					"strict" : false
+				},
+				{
+					"name" : "estado[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

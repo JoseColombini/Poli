@@ -1,0 +1,58 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity FSMEl is
+  port(
+    --INPUTS
+    clock     : in std_logic;
+    reset     : in std_logic;
+
+    destiny   : in std_logic_vector(2 downto 0); --para 8 andares
+    position  : in std_logic_vector(2 downto 0);
+    call      : in std_logic;
+    --OUTPUTS
+    upDown   : out std_logic_vector(1 downto 0)
+  );
+end entity;
+
+architecture FSMEl of FSMEl is
+
+  type State is (Init, Gup, Gd);
+  signal Enow, Efut : State;
+
+  signal equal  : integer;
+
+begin
+
+--Definicao de clock e reset
+  process(clock, reset)
+  begin
+    if (reset = '1') then
+      Enow <= Init;
+    elsif(clock'event and clock = '1') then
+      Enow <= Efut;
+    end if;
+  end process;
+
+--Preparando sinais que sinais internos para tratar estados
+  equal <= to_integer(unsigned(destiny)) - to_integer(unsigned(position));
+
+--Transicao de estados
+  Efut <=
+    Gup when (Enow = Init and call = '1' and equal > 0) or (Enow = Gup and equal > 0) else
+    Gd  when (Enow = Init and call = '1' and equal < 0) or (Enow = Gd and equal < 0) else
+    Init when others;
+
+-- Saida dos estados
+  upDown <=
+    "00" when Enow = Init else
+    "01" when Enow = Gd else
+    "10" when Enow = Gup else
+    "11" when others;
+
+--11 será tratado como falha do sistema nos porximos estados, enviando um sinal de Reset
+--foi escolhido para identificar falha no sistema, ao inves de criar prioridade para cada bit
+--o que acabaria gerando funcionamento estranhos em caso de falha;
+
+end architecture;

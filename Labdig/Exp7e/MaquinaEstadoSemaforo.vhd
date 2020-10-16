@@ -23,7 +23,7 @@ architecture Maquina1 of MaquinaEstadoSemaforo is
 begin
 
 --sensibilidade ao clock
-	sincron: process(clock, E_Atual)
+	sincron: process(clock, E_Atual, reset)
 	begin
 		--Reset
 		if(reset = '1') then
@@ -38,8 +38,8 @@ begin
 	begin
 		case E_Atual is
 			when Bgn =>				if Noturno = '1' then E_Futuro <= Piscante;
-												elsif Noturno = '0' AND PvA = '1' then E_Futuro <= eVdA;
-												elsif Noturno = '0' AND PvA = '0' AND PvB = '1' then E_Futuro <= eVdB;
+												elsif PvA = '1' then E_Futuro <= eVdA;
+												elsif PvB = '1' then E_Futuro <= eVdB;
 												else E_Futuro <= Bgn;
 												end if;
 
@@ -49,13 +49,17 @@ begin
 
 			when Apagado => 	E_Futuro <= Piscante;
 
-			when eVdA =>			E_Futuro <= eAmA;
+			when eVdA =>			if PvB = '0' and PvA = '1' then E_Futuro <= eVdA;
+												else E_Futuro <= eAmA;
+												end if;
 
 			when eAmA =>			if PvB = '0' then E_Futuro <= Bgn;
 												else E_Futuro <= eVdB;
 												end if;
 
-			when eVdB =>			E_Futuro <= eAmB;
+			when eVdB =>			if PvA = '0' and PvB = '1' then E_Futuro <= eVdB;
+												else E_Futuro <= eAmB;
+												end if;
 
 			when eAmB =>			if PvA = '0' then E_Futuro <= Bgn;
 												else E_Futuro <= eVdA;
@@ -70,7 +74,7 @@ begin
 
 	Q1 <= '1' when E_Atual = eVdB or E_Atual = eAmB or E_Atual = Piscante else '0';
 
-	Q2 <= '1' when E_Atual = Apagado or E_Atual = Bgn else '0';
+	Q2 <= '1' when E_Atual = Apagado or E_Atual = Bgn or E_Atual = Piscante else '0';
 
 
 

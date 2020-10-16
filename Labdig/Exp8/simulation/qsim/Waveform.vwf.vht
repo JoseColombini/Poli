@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/08/2020 15:51:36"
+-- Generated on "06/23/2020 17:23:18"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          FSMexp8
 -- 
@@ -38,13 +38,14 @@ SIGNAL c1s : STD_LOGIC;
 SIGNAL c5s : STD_LOGIC;
 SIGNAL clock : STD_LOGIC;
 SIGNAL Noturno : STD_LOGIC;
-SIGNAL Pd : STD_LOGIC;
-SIGNAL PvA : STD_LOGIC;
-SIGNAL PvB : STD_LOGIC;
+SIGNAL PdA : STD_LOGIC;
+SIGNAL PdB : STD_LOGIC;
 SIGNAL Q0 : STD_LOGIC;
 SIGNAL Q1 : STD_LOGIC;
 SIGNAL Q2 : STD_LOGIC;
 SIGNAL reset : STD_LOGIC;
+SIGNAL VeA : STD_LOGIC;
+SIGNAL VeB : STD_LOGIC;
 COMPONENT FSMexp8
 	PORT (
 	c1m : OUT STD_LOGIC;
@@ -52,13 +53,14 @@ COMPONENT FSMexp8
 	c5s : OUT STD_LOGIC;
 	clock : IN STD_LOGIC;
 	Noturno : IN STD_LOGIC;
-	Pd : IN STD_LOGIC;
-	PvA : IN STD_LOGIC;
-	PvB : IN STD_LOGIC;
+	PdA : IN STD_LOGIC;
+	PdB : IN STD_LOGIC;
 	Q0 : OUT STD_LOGIC;
 	Q1 : OUT STD_LOGIC;
 	Q2 : OUT STD_LOGIC;
-	reset : IN STD_LOGIC
+	reset : IN STD_LOGIC;
+	VeA : IN STD_LOGIC;
+	VeB : IN STD_LOGIC
 	);
 END COMPONENT;
 BEGIN
@@ -70,13 +72,14 @@ BEGIN
 	c5s => c5s,
 	clock => clock,
 	Noturno => Noturno,
-	Pd => Pd,
-	PvA => PvA,
-	PvB => PvB,
+	PdA => PdA,
+	PdB => PdB,
 	Q0 => Q0,
 	Q1 => Q1,
 	Q2 => Q2,
-	reset => reset
+	reset => reset,
+	VeA => VeA,
+	VeB => VeB
 	);
 
 -- clock
@@ -95,49 +98,82 @@ END PROCESS t_prcs_clock;
 t_prcs_Noturno: PROCESS
 BEGIN
 	Noturno <= '0';
+	WAIT FOR 30000 ps;
+	Noturno <= '1';
+	WAIT FOR 120000 ps;
+	Noturno <= '0';
 WAIT;
 END PROCESS t_prcs_Noturno;
 
--- Pd
-t_prcs_Pd: PROCESS
+-- PdA
+t_prcs_PdA: PROCESS
 BEGIN
-	Pd <= '0';
-	WAIT FOR 20000 ps;
-	Pd <= '1';
-	WAIT FOR 50000 ps;
-	Pd <= '0';
-	WAIT FOR 70000 ps;
-	Pd <= '1';
-	WAIT FOR 90000 ps;
-	Pd <= '0';
+	PdA <= '0';
+	WAIT FOR 230000 ps;
+	PdA <= '1';
+	WAIT FOR 230000 ps;
+	PdA <= '0';
+	WAIT FOR 40000 ps;
+	PdA <= '1';
+	WAIT FOR 40000 ps;
+	PdA <= '0';
 WAIT;
-END PROCESS t_prcs_Pd;
+END PROCESS t_prcs_PdA;
 
--- PvA
-t_prcs_PvA: PROCESS
+-- VeA
+t_prcs_VeA: PROCESS
 BEGIN
-	PvA <= '0';
-	WAIT FOR 70000 ps;
-	PvA <= '1';
-	WAIT FOR 410000 ps;
-	PvA <= '0';
+	VeA <= '0';
+	WAIT FOR 230000 ps;
+	VeA <= '1';
+	WAIT FOR 230000 ps;
+	VeA <= '0';
+	WAIT FOR 140000 ps;
+	VeA <= '1';
+	WAIT FOR 30000 ps;
+	VeA <= '0';
+	WAIT FOR 40000 ps;
+	VeA <= '1';
+	WAIT FOR 280000 ps;
+	VeA <= '0';
 WAIT;
-END PROCESS t_prcs_PvA;
+END PROCESS t_prcs_VeA;
 
--- PvB
-t_prcs_PvB: PROCESS
+-- PdB
+t_prcs_PdB: PROCESS
 BEGIN
-	PvB <= '0';
-	WAIT FOR 70000 ps;
-	PvB <= '1';
-	WAIT FOR 410000 ps;
-	PvB <= '0';
+	PdB <= '0';
+	WAIT FOR 230000 ps;
+	PdB <= '1';
+	WAIT FOR 230000 ps;
+	PdB <= '0';
 WAIT;
-END PROCESS t_prcs_PvB;
+END PROCESS t_prcs_PdB;
+
+-- VeB
+t_prcs_VeB: PROCESS
+BEGIN
+	VeB <= '0';
+	WAIT FOR 230000 ps;
+	VeB <= '1';
+	WAIT FOR 230000 ps;
+	VeB <= '0';
+	WAIT FOR 60000 ps;
+	VeB <= '1';
+	WAIT FOR 110000 ps;
+	VeB <= '0';
+WAIT;
+END PROCESS t_prcs_VeB;
 
 -- reset
 t_prcs_reset: PROCESS
 BEGIN
+	reset <= '1';
+	WAIT FOR 10000 ps;
+	reset <= '0';
+	WAIT FOR 400000 ps;
+	reset <= '1';
+	WAIT FOR 20000 ps;
 	reset <= '0';
 WAIT;
 END PROCESS t_prcs_reset;

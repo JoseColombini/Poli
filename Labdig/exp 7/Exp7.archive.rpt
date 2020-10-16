@@ -1,5 +1,5 @@
 Archive Project report for Exp7
-Mon May 04 09:35:02 2020
+Wed Jun 24 11:07:17 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -35,7 +35,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Mon May 04 09:35:02 2020 ;
+; Archive Project Status ; Successful - Wed Jun 24 11:07:17 2020 ;
 ; Revision Name          ; Exp7                                  ;
 ; Top-level Entity Name  ; Exp7                                  ;
 ; Family                 ; Cyclone V                             ;
@@ -50,17 +50,17 @@ Info: File Set 'Source control' contains:
     Info: Automatically detected source files
 Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
 Info: Archive will store files relative to the closest common parent directory
-Info (13213): Using common directory D:/Labdig/
+Info (13213): Using common directory D:/GitHub/Poli/Labdig/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive 'D:/Labdig/exp 7/Exp7.qar'
+Info: Generated archive 'D:/GitHub/Poli/Labdig/exp 7/Exp7.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'Exp7.archive.rpt'
 Info (23030): Evaluation of Tcl script d:/epqe/quartus/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4736 megabytes
-    Info: Processing ended: Mon May 04 09:35:02 2020
+    Info: Processing ended: Wed Jun 24 11:07:17 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -74,9 +74,9 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; ../Exp7t/CircuitoTemporizador.vhd                     ;
 ; ../Exp7t/fliflop.vhd                                  ;
 ; d:/epqe/quartus/quartus/bin64/assignment_defaults.qdf ;
-; D:/Labdig/Exp7e/MaquinaEstadoSemaforo.vhd             ;
-; D:/Labdig/Exp7t/CircuitoTemporizador.vhd              ;
-; D:/Labdig/Exp7t/fliflop.vhd                           ;
+; D:/GitHub/Poli/Labdig/Exp7e/MaquinaEstadoSemaforo.vhd ;
+; D:/GitHub/Poli/Labdig/Exp7t/CircuitoTemporizador.vhd  ;
+; D:/GitHub/Poli/Labdig/Exp7t/fliflop.vhd               ;
 ; Exp7.qpf                                              ;
 ; Exp7.qsf                                              ;
 ; Exp7.vhd                                              ;

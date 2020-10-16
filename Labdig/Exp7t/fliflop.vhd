@@ -13,7 +13,7 @@ architecture fliflop of fliflop is
 
 begin
 
-	process(clock)
+	process(clock, reset)
 	begin
 		if(reset = '1') then
 			Q <= '0';

@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/04/2020 02:19:04"
+-- Generated on "06/23/2020 14:17:02"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          exp7
 -- 
@@ -96,11 +96,7 @@ BEGIN
 	PvA <= '0';
 	WAIT FOR 130000 ps;
 	PvA <= '1';
-	WAIT FOR 110000 ps;
-	PvA <= '0';
-	WAIT FOR 90000 ps;
-	PvA <= '1';
-	WAIT FOR 100000 ps;
+	WAIT FOR 850000 ps;
 	PvA <= '0';
 WAIT;
 END PROCESS t_prcs_PvA;
@@ -111,7 +107,7 @@ BEGIN
 	PvB <= '0';
 	WAIT FOR 130000 ps;
 	PvB <= '1';
-	WAIT FOR 110000 ps;
+	WAIT FOR 850000 ps;
 	PvB <= '0';
 WAIT;
 END PROCESS t_prcs_PvB;
@@ -119,10 +115,8 @@ END PROCESS t_prcs_PvB;
 -- reset
 t_prcs_reset: PROCESS
 BEGIN
-	reset <= '0';
-	WAIT FOR 400000 ps;
 	reset <= '1';
-	WAIT FOR 30000 ps;
+	WAIT FOR 10000 ps;
 	reset <= '0';
 WAIT;
 END PROCESS t_prcs_reset;

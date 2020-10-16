@@ -1,0 +1,14 @@
+
+State Machine - |FSMEl|Epast
+Name Epast.Door Epast.Gd Epast.Gup Epast.Init 
+Epast.Init 0 0 0 0 
+Epast.Gup 0 0 1 1 
+Epast.Gd 0 1 0 1 
+Epast.Door 1 0 0 1 
+
+State Machine - |FSMEl|Enow
+Name Enow.Door Enow.Gd Enow.Gup Enow.Init 
+Enow.Init 0 0 0 0 
+Enow.Gup 0 0 1 1 
+Enow.Gd 0 1 0 1 
+Enow.Door 1 0 0 1 

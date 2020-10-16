@@ -1,17 +1,17 @@
-Quartus Prime Archive log --	D:/Labdig/exp 7/Exp7.qarlog
+Quartus Prime Archive log --	D:/GitHub/Poli/Labdig/exp 7/Exp7.qarlog
 
-Archive:	D:/Labdig/exp 7/Exp7.qar
-Date:		Mon May 04 09:35:02 2020
+Archive:	D:/GitHub/Poli/Labdig/exp 7/Exp7.qar
+Date:		Wed Jun 24 11:07:17 2020
 Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 	=========== Files Selected: ===========
-D:/Labdig/Exp7e/MaquinaEstadoSemaforo.vhd
-D:/Labdig/Exp7t/CircuitoTemporizador.vhd
-D:/Labdig/Exp7t/fliflop.vhd
-D:/Labdig/exp 7/Exp7.qpf
-D:/Labdig/exp 7/Exp7.qsf
-D:/Labdig/exp 7/Exp7.vhd
-D:/Labdig/exp 7/Waveform.vwf
+D:/GitHub/Poli/Labdig/Exp7e/MaquinaEstadoSemaforo.vhd
+D:/GitHub/Poli/Labdig/Exp7t/CircuitoTemporizador.vhd
+D:/GitHub/Poli/Labdig/Exp7t/fliflop.vhd
+D:/GitHub/Poli/Labdig/exp 7/Exp7.qpf
+D:/GitHub/Poli/Labdig/exp 7/Exp7.qsf
+D:/GitHub/Poli/Labdig/exp 7/Exp7.vhd
+D:/GitHub/Poli/Labdig/exp 7/Waveform.vwf
 d:/epqe/quartus/quartus/bin64/assignment_defaults.qdf
 	======= Total: 8 files to archive =======
 

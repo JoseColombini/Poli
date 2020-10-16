@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/04/2020 01:22:50"
+-- Generated on "06/23/2020 17:11:07"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          MaquinaEstadoSemaforo
 -- 
@@ -92,12 +92,18 @@ END PROCESS t_prcs_clock;
 t_prcs_Noturno: PROCESS
 BEGIN
 	Noturno <= '0';
+	WAIT FOR 650000 ps;
+	Noturno <= '1';
+	WAIT FOR 240000 ps;
+	Noturno <= '0';
 WAIT;
 END PROCESS t_prcs_Noturno;
 
 -- reset
 t_prcs_reset: PROCESS
 BEGIN
+	reset <= '1';
+	WAIT FOR 20000 ps;
 	reset <= '0';
 WAIT;
 END PROCESS t_prcs_reset;
@@ -105,6 +111,16 @@ END PROCESS t_prcs_reset;
 -- PvB
 t_prcs_PvB: PROCESS
 BEGIN
+	PvB <= '0';
+	WAIT FOR 90000 ps;
+	PvB <= '1';
+	WAIT FOR 210000 ps;
+	PvB <= '0';
+	WAIT FOR 30000 ps;
+	PvB <= '1';
+	WAIT FOR 160000 ps;
+	PvB <= '0';
+	WAIT FOR 500000 ps;
 	PvB <= '1';
 WAIT;
 END PROCESS t_prcs_PvB;
@@ -112,6 +128,16 @@ END PROCESS t_prcs_PvB;
 -- PvA
 t_prcs_PvA: PROCESS
 BEGIN
+	PvA <= '0';
+	WAIT FOR 90000 ps;
+	PvA <= '1';
+	WAIT FOR 210000 ps;
+	PvA <= '0';
+	WAIT FOR 180000 ps;
+	PvA <= '1';
+	WAIT FOR 130000 ps;
+	PvA <= '0';
+	WAIT FOR 380000 ps;
 	PvA <= '1';
 WAIT;
 END PROCESS t_prcs_PvA;

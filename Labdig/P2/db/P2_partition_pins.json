@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "c20k",
+					"strict" : false
+				},
+				{
+					"name" : "c2k",
+					"strict" : false
+				},
+				{
+					"name" : "c200",
+					"strict" : false
+				},
+				{
+					"name" : "c20",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

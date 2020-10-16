@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Exp7 -c Exp7 --vector_source="D:/Labdig/exp 7/Waveform.vwf" --testbench_file="D:/Labdig/exp 7/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Exp7 -c Exp7 --vector_source="D:/GitHub/Poli/Labdig/exp 7/Waveform.vwf" --testbench_file="D:/GitHub/Poli/Labdig/exp 7/simulation/qsim/Waveform.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,8 +25,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Mon May 04 02:19:03 2020
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Exp7 -c Exp7 --vector_source="D:/Labdig/exp 7/Waveform.vwf" --testbench_file="D:/Labdig/exp 7/simulation/qsim/Waveform.vwf.vht"
+    Info: Processing started: Tue Jun 23 14:17:01 2020
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Exp7 -c Exp7 --vector_source="D:/GitHub/Poli/Labdig/exp 7/Waveform.vwf" --testbench_file="D:/GitHub/Poli/Labdig/exp 7/simulation/qsim/Waveform.vwf.vht"
 Info (119006): Selected device 5CEBA4F23C7 for design "Exp7"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -34,7 +34,7 @@ Completed successfully.
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Labdig/exp 7/simulation/qsim/" Exp7 -c Exp7
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/GitHub/Poli/Labdig/exp 7/simulation/qsim/" Exp7 -c Exp7
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -52,14 +52,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Mon May 04 02:19:05 2020
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Labdig/exp 7/simulation/qsim/" Exp7 -c Exp7
+    Info: Processing started: Tue Jun 23 14:17:03 2020
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/GitHub/Poli/Labdig/exp 7/simulation/qsim/" Exp7 -c Exp7
 Info (119006): Selected device 5CEBA4F23C7 for design "Exp7"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Exp7.vho in folder "D:/Labdig/exp 7/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Exp7.vho in folder "D:/GitHub/Poli/Labdig/exp 7/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4702 megabytes
-    Info: Processing ended: Mon May 04 02:19:06 2020
+    Info: Peak virtual memory: 4705 megabytes
+    Info: Processing ended: Tue Jun 23 14:17:04 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -67,7 +67,7 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-D:/Labdig/exp 7/simulation/qsim/Exp7.do generated.
+D:/GitHub/Poli/Labdig/exp 7/simulation/qsim/Exp7.do generated.
 
 Completed successfully. 
 
@@ -84,7 +84,7 @@ Reading D:/epqe/quartus/modelsim_ase/tcl/vsim/pref.tcl
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:19:07 on May 04,2020
+# Start time: 14:17:04 on Jun 23,2020
 # vcom -work work Exp7.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -99,22 +99,22 @@ Reading D:/epqe/quartus/modelsim_ase/tcl/vsim/pref.tcl
 # -- Compiling entity exp7
 # -- Compiling architecture structure of exp7
 
-# End time: 02:19:07 on May 04,2020, Elapsed time: 0:00:00
+# End time: 14:17:05 on Jun 23,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:19:07 on May 04,2020
+# Start time: 14:17:05 on Jun 23,2020
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity exp7_vhd_vec_tst
 # -- Compiling architecture exp7_arch of exp7_vhd_vec_tst
-# End time: 02:19:07 on May 04,2020, Elapsed time: 0:00:00
+# End time: 14:17:05 on Jun 23,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Exp7_vhd_vec_tst 
-# Start time: 02:19:07 on May 04,2020
+# Start time: 14:17:05 on Jun 23,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -132,24 +132,24 @@ Reading D:/epqe/quartus/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
-# ** Warning: Design size of 36273 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 36049 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#34
 
-# End time: 02:19:08 on May 04,2020, Elapsed time: 0:00:01
+# End time: 14:17:06 on Jun 23,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading D:/Labdig/exp 7/Waveform.vwf...
+Reading D:/GitHub/Poli/Labdig/exp 7/Waveform.vwf...
 
-Reading D:/Labdig/exp 7/simulation/qsim/Exp7.msim.vcd...
+Reading D:/GitHub/Poli/Labdig/exp 7/simulation/qsim/Exp7.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/Labdig/exp 7/simulation/qsim/Exp7_20200504021908.sim.vwf
+Writing the resulting VWF to D:/GitHub/Poli/Labdig/exp 7/simulation/qsim/Exp7_20200623141706.sim.vwf
 
 Finished VCD to VWF conversion.
 

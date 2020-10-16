@@ -1,5 +1,6 @@
 |CircuitoTemporizador
 c1s => cout.OUTPUTSELECT
+c1s => ts1s.ACLR
 c5s => cout.OUTPUTSELECT
 c5s => fliflop:conter:0:INITC:Ci.reset
 c5s => fliflop:conter:1:CO1:Ci.reset
@@ -72,7 +73,7 @@ clock => cc1[28].CLK
 clock => cc1[29].CLK
 clock => cc1[30].CLK
 clock => cc1[31].CLK
-cout << cout.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CircuitoTemporizador|fliflop:\conter:0:INITC:Ci

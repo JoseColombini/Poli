@@ -22,8 +22,8 @@ architecture CircuitoTemporizador of CircuitoTemporizador is
   end component;
 
 
-  signal temp1s, temp5s, temp1m  : std_logic := '0';
-  signal cc1, cc5, cc60 : integer := 1;
+  signal temp1s, temp5s, temp1m, ts1s  : std_logic := '0';
+  signal cc1, cc5, cc60, cc1x : integer := 1;
   signal clk  : std_logic := '0';
   signal cont, Ncont : std_logic_vector(3 downto 0);
 
@@ -35,12 +35,14 @@ begin
   begin
     if(clock'event and clock = '1') then
         cc1 <= cc1 + 1;
-      if (cc1 = 2) then
+      if (cc1 = 25000000) then
         temp1s <= not(temp1s);
 			   cc1 <= 1;
 		end if;
       end if;
   end process;
+
+
 
   d0 <= Ncont(0) and Ncont(2);
   d1 <= (Ncont(0) and cont(1)) or (Ncont(1) and cont(0));
@@ -62,21 +64,6 @@ begin
    end generate;
  end generate;
 
---
--- process(temp1s, c5s)
--- begin
---   if(c5s = '0') then
---     cc5 <= 1;
---     temp5s <= '0';
---   elsif (temp1s'event and temp1s = '1') then
---     cc5 <= cc5 + 1;
---     if(cc5 = 5) then
---       temp5s <= not(temp5s);
---       cc5 <= 1;
---     end if;
---   end if;
--- end process;
-
 
 process(temp1s, c1m)
 begin
@@ -97,14 +84,5 @@ end process;
           temp1m when c1m = '1' else
           '0';
 
--- process(temp)
--- begin
---   if(temp = '1') then
---     Reset <= '1';
---   end if;
---   if(Reset = '1') then
---     Reset <= '0';
---   end if;
---	end process;
 
 end architecture;

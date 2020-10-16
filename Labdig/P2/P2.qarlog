@@ -1,0 +1,15 @@
+Quartus Prime Archive log --	D:/GitHub/Poli/Labdig/P2/P2.qarlog
+
+Archive:	D:/GitHub/Poli/Labdig/P2/P2.qar
+Date:		Fri Jul 24 21:06:17 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/GitHub/Poli/Labdig/P2/P2.qpf
+D:/GitHub/Poli/Labdig/P2/P2.qsf
+D:/GitHub/Poli/Labdig/P2/P2.vhd
+d:/epqe/quartus/quartus/bin64/assignment_defaults.qdf
+	======= Total: 4 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
