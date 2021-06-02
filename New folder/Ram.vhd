@@ -2,8 +2,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
---types defined to make the code readable 
-type mem_tipo is array (0 to addressSize - 1) of bit_vector (wordSize -1 downto 0);
+
 
 --entity of ram
 entity ram is
@@ -21,6 +20,8 @@ end ram;
 
 --the basic architecture for ram
 architecture ram of ram is
+	--types defined to make the code readable 
+	type mem_tipo is array (0 to addressSize - 1) of bit_vector (wordSize -1 downto 0);
 
 	signal memory : mem_tipo;
 	
