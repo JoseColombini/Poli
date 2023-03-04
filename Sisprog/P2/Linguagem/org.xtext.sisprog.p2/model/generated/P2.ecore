@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="p2" nsURI="http://www.xtext.org/sisprog/P2" nsPrefix="p2">
+  <eClassifiers xsi:type="ecore:EClass" name="Programa">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="funcoes" upperBound="-1"
+        eType="#//Funcao" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Funcao">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="comandos" upperBound="-1"
+        eType="#//Comando" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Comando"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DesvioCondicional" eSuperTypes="#//Comando">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="comparacao" upperBound="-1"
+        eType="#//Comparacao" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="comandos" upperBound="-1"
+        eType="#//Comando" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="comando" upperBound="-1"
+        eType="#//Comando" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Comparacao">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op1" eType="#//Expressao"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="opr" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op2" eType="#//Expressao"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Atribuicao" eSuperTypes="#//Comando">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="res" eType="#//variavel"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="at" eType="#//Aritmetico"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Aritmetico" eSuperTypes="#//Expressao">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op1" eType="#//Expressao"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="opr" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op2" upperBound="-1" eType="#//Expressao"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Expressao"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Desvio" eSuperTypes="#//Comando">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rotina" eType="#//Funcao"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Value" eSuperTypes="#//Expressao"/>
+  <eClassifiers xsi:type="ecore:EClass" name="variavel" eSuperTypes="#//Value">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

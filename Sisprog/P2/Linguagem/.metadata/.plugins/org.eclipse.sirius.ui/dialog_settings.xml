@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExportRepresentationsAsImagesDialog">
+		<item key="ExportRepresentationsAsImagesDialog.imageFormat" value="JPG"/>
+		<list key="ExportRepresentationsAsImagesDialog.file">
+			<item value="/home/josecolombini/git/Sisprog/P2/Linguagem/org.xtext.sisprog.p2/model/generated"/>
+			<item value="/home/josecolombini/git/Sisprog/P2/Linguagem/org.xtext.sisprog.p2/model/generated/p2 class diagram.jpg"/>
+		</list>
+	</section>
+</section>

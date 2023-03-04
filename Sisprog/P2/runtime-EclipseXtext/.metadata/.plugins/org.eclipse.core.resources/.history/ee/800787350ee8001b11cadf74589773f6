@@ -1,0 +1,6 @@
+A : 
+
+teste = 1 + 2;
+x = teste + 2;
+
+ END

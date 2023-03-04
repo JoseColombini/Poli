@@ -1,0 +1,16 @@
+A : 
+
+teste = 0; 
+x = teste*2;
+
+Laco:
+	if (x < 3){
+		teste = teste + 2;
+		x = teste*2;
+		jump Laco;
+	};
+
+fim:
+	s = x + (2*teste**x) - a/2;
+	
+END

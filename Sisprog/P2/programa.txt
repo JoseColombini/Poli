@@ -1,0 +1,44 @@
+%Comentario
+oi:
++3
+s0
+*2
+s1
+> cha
+35
+q
+
+cha:
+10
+q
+
+%x^y, x => M[0]; y => M[1]; 1 => M[2]
+pot:
+l1
+> loop
+q
+
+loop:
+-1
+s1
+l2
+*m0
+s2
+g pot
+q
+
+da um append aqui
+teste:
+0
++65
+s0
+q
+q
+mediasisprog:
+9
+s0
+10
+*2
++m0
+/3
+q

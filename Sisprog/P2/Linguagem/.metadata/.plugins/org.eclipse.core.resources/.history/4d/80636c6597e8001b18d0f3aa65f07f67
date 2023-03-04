@@ -1,0 +1,72 @@
+grammar org.xtext.sisprog.P2 with org.eclipse.xtext.common.Terminals
+
+
+generate p2 "http://www.xtext.org/sisprog/P2"
+
+Programa:
+	(funcoes += Funcao)+ 'END'
+;
+Funcao:
+	(name = Rotulo) ':' (comandos += Comando)+ 
+;
+	
+Comando:
+	(Atribuicao|Desvio|DesvioCondicional/*|Laco*/) ';';
+
+DesvioCondicional:
+	'if' '('(comparacao += Comparacao)+ ')' '{'
+		(comandos += Comando)+
+		'}'
+	('else' '{'(comando += Comando)+'}')?
+;
+
+Comparacao:
+	((op1 = Expressao) opr += comparador (op2 = Expressao))
+;
+
+Atribuicao:
+	(res = (variavel)) '=' (at = Aritmetico)
+;
+
+Aritmetico:
+    op1 = Expressao (opr += Operacao op2 += Expressao)*;
+
+Expressao:
+	'('Aritmetico')'| Value;
+
+Desvio:
+	'jump' (rotina = [Funcao])
+;
+
+Value:
+	variavel | {Value} INT
+;
+
+variavel:
+	name = Rotulo
+;
+
+//Laco:
+//	'while' '('comparacao += Comparacao')''{'
+//		(comandos += Comando)
+//	'}'
+//	
+//;
+
+Rotulo:
+	ID;
+
+
+Operacao:
+	('+'|'-'|'*'|'/'|'**');
+	
+comparador:
+	('=='|'!='|'<'|'>'|'<='| '>=');
+
+//inteiro:
+//	INT;	
+
+
+terminal CHAR:
+	('a'..'z'|'A'..'Z');
+	

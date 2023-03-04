@@ -1,0 +1,19 @@
+A : 
+
+teste = 3; 
+x = teste + (4*5);
+
+Laco:
+	if (x < 3){
+		teste = teste*2;
+		jump Laco;
+	}else{
+		jump fim;
+	};
+
+fim:
+
+	
+ 
+ 
+ END
